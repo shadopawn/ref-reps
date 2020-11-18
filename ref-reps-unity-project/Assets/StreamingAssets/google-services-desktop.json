@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "718485621784",
+    "firebase_url": "https://admin-portal-firebase.firebaseio.com",
+    "project_id": "admin-portal-firebase",
+    "storage_bucket": "admin-portal-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718485621784:android:1386582c68aa9cafd1c76d",
+        "android_client_info": {
+          "package_name": "com.ref_reps.unity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718485621784-gk08ekk8juhq5m5mioq6nk0edci8jgbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh-7nML1gK9Ftoyq5QcyP9xD65IW918ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718485621784-gk08ekk8juhq5m5mioq6nk0edci8jgbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
