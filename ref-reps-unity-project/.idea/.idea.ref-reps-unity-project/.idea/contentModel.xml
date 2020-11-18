@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\mlitt\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mlitt\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ref-reps-unity-project.548882066.00" t="ExcludeRecursive" />
+    <e p="C:\Users\mlitt\Documents\Daniel_Litt\ref-reps\ref-reps-unity-project" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="ExternalDependencyManager" t="Include">
+          <e p="Editor" t="Include">
+            <e p="external-dependency-manager_version-1.2.161_manifest.txt" t="Include" />
+            <e p="GoogleRegistries.xml" t="Include" />
+          </e>
+        </e>
+        <e p="Firebase" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AppDependencies.xml" t="Include" />
+            <e p="AuthDependencies.xml" t="Include" />
+            <e p="FirebaseAuth_version-6.16.1_manifest.txt" t="Include" />
+            <e p="FirebaseStorage_version-6.16.1_manifest.txt" t="Include" />
+            <e p="StorageDependencies.xml" t="Include" />
+          </e>
+          <e p="m2repository" t="Include">
+            <e p="com" t="Include">
+              <e p="google" t="Include">
+                <e p="Firebase" t="Include">
+                  <e p="firebase-app-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-auth-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                  <e p="firebase-storage-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="KinectView" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BodySourceManager.cs" t="Include" />
+            <e p="BodySourceView.cs" t="Include" />
+            <e p="ColorSourceManager.cs" t="Include" />
+            <e p="ColorSourceView.cs" t="Include" />
+            <e p="DepthSourceManager.cs" t="Include" />
+            <e p="DepthSourceView.cs" t="Include" />
+            <e p="DisableOnStart.cs" t="Include" />
+            <e p="InfraredSourceManager.cs" t="Include" />
+            <e p="InfraredSourceView.cs" t="Include" />
+            <e p="MultiSourceManager.cs" t="Include" />
+          </e>
+        </e>
+        <e p="NuitrackSDK" t="Include">
+          <e p="Nuitrack" t="Include">
+            <e p="Advanced" t="Include">
+              <e p="NuitrackAvatar.cs" t="Include" />
+              <e p="NuitrackAvatarAdvanced.cs" t="Include" />
+              <e p="RiggedAvatarAdvanced.cs" t="Include" />
+            </e>
+            <e p="CalibrationRotationScripts" t="Include">
+              <e p="CalibrationInfo.cs" t="Include" />
+              <e p="CamRotation.cs" t="Include" />
+              <e p="For ios" t="Include">
+                <e p="CameraRotation.cs" t="Include" />
+                <e p="SensorRotation.cs" t="Include" />
+              </e>
+              <e p="TPoseCalibration.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="CurrentUserTracker.cs" t="Include" />
+              <e p="DrawSegment.cs" t="Include" />
+              <e p="HandPressure.cs" t="Include" />
+              <e p="ModelJoint.cs" t="Include" />
+              <e p="NuitrackLoader.cs" t="Include" />
+              <e p="NuitrackManager.cs" t="Include" />
+              <e p="NuitrackUtils.cs" t="Include" />
+              <e p="SimpleSkeletonAvatar3d.cs" t="Include" />
+              <e p="SkeletonAvatar.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="GvrUnlitTransparentOverlayColor.shader" t="Include" />
+              <e p="ui_zignore_image.shader" t="Include" />
+              <e p="ui_zigonre_font.shader" t="Include" />
+            </e>
+          </e>
+          <e p="Platform Changer" t="Include">
+            <e p="Editor" t="Include">
+              <e p="PlatformChanger.cs" t="Include" />
+            </e>
+            <e p="EnviromentSwitcher.cs" t="Include" />
+            <e p="GameVersion.cs" t="Include" />
+            <e p="Manifests" t="Include">
+              <e p="Default" t="Include">
+                <e p="AndroidManifest_default.xml" t="Include" />
+              </e>
+              <e p="GearVR" t="Include">
+                <e p="AndroidManifest_GearVR.xml" t="Include" />
+              </e>
+            </e>
+            <e p="PlatformSetsData.cs" t="Include" />
+          </e>
+          <e p="Pointer" t="Include">
+            <e p="PointerPassing.cs" t="Include" />
+            <e p="PointerRotation.cs" t="Include" />
+            <e p="PointerVisuals.cs" t="Include" />
+            <e p="VVRInput.cs" t="Include" />
+          </e>
+          <e p="SafetyGrid" t="Include">
+            <e p="SensorPointReplacer.cs" t="Include" />
+          </e>
+          <e p="UnityChan" t="Include">
+            <e p="license.txt" t="Include" />
+            <e p="Models" t="Include">
+              <e p="UnityChanShader" t="Include">
+                <e p="Shader" t="Include">
+                  <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_eye.shader" t="Include" />
+                  <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_fuku.shader" t="Include" />
+                  <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+                  <e p="Unitychan_chara_hada.shader" t="Include" />
+                  <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+                  <e p="Unitychan_chara_hair.shader" t="Include" />
+                  <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="VicoVRCalibrationRGB" t="Include">
+            <e p="Materials" t="Include">
+              <e p="Unlit-GS.shader" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="BackTextureCreator.cs" t="Include" />
+              <e p="RGBCalibrationVisualizer.cs" t="Include" />
+              <e p="SensorDisconnectChecker.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Android" t="Include">
+            <e p="AndroidManifest.xml" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="baseballPointScript.cs" t="Include" />
+          <e p="BodySourceViewTitle.cs" t="Include" />
+          <e p="CallMake.cs" t="Include" />
+          <e p="ColorSourceManagerTitle.cs" t="Include" />
+          <e p="ColorSourceViewTitle.cs" t="Include" />
+          <e p="CursorStart.cs" t="Include" />
+          <e p="DoubleClick.cs" t="Include" />
+          <e p="endLessonScript.cs" t="Include" />
+          <e p="ErrorMessageTitle.cs" t="Include" />
+          <e p="exitbutton.cs" t="Include" />
+          <e p="ExitToMainScript.cs" t="Include" />
+          <e p="FrameByFrameScript.cs" t="Include" />
+          <e p="GameControllerScript.cs" t="Include" />
+          <e p="GameStore.cs" t="Include" />
+          <e p="HalfSpeedScript.cs" t="Include" />
+          <e p="handScript.cs" t="Include" />
+          <e p="IconInteractScript.cs" t="Include" />
+          <e p="KinectVideoScript.cs" t="Include" />
+          <e p="KinectVideoScriptTitle.cs" t="Include" />
+          <e p="LessonConstructorScript.cs" t="Include" />
+          <e p="LessonData.cs" t="Include" />
+          <e p="LessonModuleController.cs" t="Include" />
+          <e p="LessonSelectScript.cs" t="Include" />
+          <e p="MidPanelScript.cs" t="Include" />
+          <e p="NextLessonScript.cs" t="Include" />
+          <e p="NuitrackScripts" t="Include">
+            <e p="ColorFrameScript.cs" t="Include" />
+            <e p="NativeAvatarScript.cs" t="Include" />
+            <e p="NuitrackCursor.cs" t="Include" />
+          </e>
+          <e p="OptionPointScript.cs" t="Include" />
+          <e p="PinWheel.cs" t="Include" />
+          <e p="PointEachScript.cs" t="Include" />
+          <e p="PointScript.cs" t="Include" />
+          <e p="quitScript.cs" t="Include" />
+          <e p="ReplayNodeScript.cs" t="Include" />
+          <e p="SameRect.cs" t="Include" />
+          <e p="SameText.cs" t="Include" />
+          <e p="SaveScript.cs" t="Include" />
+          <e p="ScrollDown.cs" t="Include" />
+          <e p="ScrollUp.cs" t="Include" />
+          <e p="slideBar.cs" t="Include" />
+          <e p="testScript.cs" t="Include" />
+          <e p="TitleButtonScript.cs" t="Include" />
+          <e p="TitleScript.cs" t="Include" />
+          <e p="UILayoutManager.cs" t="Include" />
+          <e p="UIScripts" t="Include">
+            <e p="barGhost.cs" t="Include" />
+            <e p="CornerUIHubScript.cs" t="Include" />
+            <e p="CreateLessonBtnScript.cs" t="Include" />
+            <e p="CursorInteractionScript.cs" t="Include" />
+            <e p="HubNodeUIScript.cs" t="Include" />
+            <e p="ReplayButtonScript.cs" t="Include" />
+            <e p="SeeAnalysisExecute.cs" t="Include" />
+            <e p="SeeAnalysisScript.cs" t="Include" />
+            <e p="StartButtonScript.cs" t="Include" />
+            <e p="UIBarScript.cs" t="Include" />
+            <e p="UIScriptManager.cs" t="Include" />
+          </e>
+          <e p="videoPlayerScript.cs" t="Include" />
+          <e p="VideoSelectExitButton.cs" t="Include" />
+          <e p="ViewLessonAgainScript.cs" t="Include" />
+          <e p="VirtualCursorKinectExecuteScript.cs" t="Include" />
+          <e p="virtualCursorScript.cs" t="Include" />
+          <e p="virtualCursorTitle.cs" t="Include" />
+          <e p="virutalCursorExecuteScript.cs" t="Include" />
+          <e p="WatchLessonButton.cs" t="Include" />
+          <e p="WatchLessonScript.cs" t="Include" />
+          <e p="WatchLessonText.cs" t="Include" />
+        </e>
+        <e p="Standard Assets" t="Include">
+          <e p="CameraIntrinsics.cs" t="Include" />
+          <e p="CollectionMap.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="KinectCopyPluginDataHelper.cs" t="Include" />
+          </e>
+          <e p="EventPump.cs" t="Include" />
+          <e p="ExceptionHelper.cs" t="Include" />
+          <e p="INativeWrapper.cs" t="Include" />
+          <e p="KinectBuffer.cs" t="Include" />
+          <e p="KinectSpecialCases.cs" t="Include" />
+          <e p="NativeObjectCache.cs" t="Include" />
+          <e p="NativeWrapper.cs" t="Include" />
+          <e p="SmartGCHandle.cs" t="Include" />
+          <e p="ThreadSafeDictionary.cs" t="Include" />
+          <e p="Windows" t="Include">
+            <e p="Data" t="Include">
+              <e p="PropertyChangedEventArgs.cs" t="Include" />
+            </e>
+            <e p="Kinect" t="Include">
+              <e p="Activity.cs" t="Include" />
+              <e p="Appearance.cs" t="Include" />
+              <e p="AudioBeam.cs" t="Include" />
+              <e p="AudioBeamFrame.cs" t="Include" />
+              <e p="AudioBeamFrameArrivedEventArgs.cs" t="Include" />
+              <e p="AudioBeamFrameList.cs" t="Include" />
+              <e p="AudioBeamFrameReader.cs" t="Include" />
+              <e p="AudioBeamFrameReference.cs" t="Include" />
+              <e p="AudioBeamMode.cs" t="Include" />
+              <e p="AudioBeamSubFrame.cs" t="Include" />
+              <e p="AudioBodyCorrelation.cs" t="Include" />
+              <e p="AudioSource.cs" t="Include" />
+              <e p="Body.cs" t="Include" />
+              <e p="BodyFrame.cs" t="Include" />
+              <e p="BodyFrameArrivedEventArgs.cs" t="Include" />
+              <e p="BodyFrameReader.cs" t="Include" />
+              <e p="BodyFrameReference.cs" t="Include" />
+              <e p="BodyFrameSource.cs" t="Include" />
+              <e p="BodyIndexFrame.cs" t="Include" />
+              <e p="BodyIndexFrameArrivedEventArgs.cs" t="Include" />
+              <e p="BodyIndexFrameReader.cs" t="Include" />
+              <e p="BodyIndexFrameReference.cs" t="Include" />
+              <e p="BodyIndexFrameSource.cs" t="Include" />
+              <e p="CameraSpacePoint.cs" t="Include" />
+              <e p="ColorCameraSettings.cs" t="Include" />
+              <e p="ColorFrame.cs" t="Include" />
+              <e p="ColorFrameArrivedEventArgs.cs" t="Include" />
+              <e p="ColorFrameReader.cs" t="Include" />
+              <e p="ColorFrameReference.cs" t="Include" />
+              <e p="ColorFrameSource.cs" t="Include" />
+              <e p="ColorImageFormat.cs" t="Include" />
+              <e p="ColorSpacePoint.cs" t="Include" />
+              <e p="CoordinateMapper.cs" t="Include" />
+              <e p="CoordinateMappingChangedEventArgs.cs" t="Include" />
+              <e p="DepthFrame.cs" t="Include" />
+              <e p="DepthFrameArrivedEventArgs.cs" t="Include" />
+              <e p="DepthFrameReader.cs" t="Include" />
+              <e p="DepthFrameReference.cs" t="Include" />
+              <e p="DepthFrameSource.cs" t="Include" />
+              <e p="DepthSpacePoint.cs" t="Include" />
+              <e p="DetectionResult.cs" t="Include" />
+              <e p="Expression.cs" t="Include" />
+              <e p="FrameCapturedEventArgs.cs" t="Include" />
+              <e p="FrameCapturedStatus.cs" t="Include" />
+              <e p="FrameDescription.cs" t="Include" />
+              <e p="FrameEdges.cs" t="Include" />
+              <e p="FrameSourceTypes.cs" t="Include" />
+              <e p="HandState.cs" t="Include" />
+              <e p="InfraredFrame.cs" t="Include" />
+              <e p="InfraredFrameArrivedEventArgs.cs" t="Include" />
+              <e p="InfraredFrameReader.cs" t="Include" />
+              <e p="InfraredFrameReference.cs" t="Include" />
+              <e p="InfraredFrameSource.cs" t="Include" />
+              <e p="IsAvailableChangedEventArgs.cs" t="Include" />
+              <e p="Joint.cs" t="Include" />
+              <e p="JointOrientation.cs" t="Include" />
+              <e p="JointType.cs" t="Include" />
+              <e p="KinectAudioCalibrationState.cs" t="Include" />
+              <e p="KinectCapabilities.cs" t="Include" />
+              <e p="KinectSensor.cs" t="Include" />
+              <e p="KinectUnityAddinUtils.cs" t="Include" />
+              <e p="LongExposureInfraredFrame.cs" t="Include" />
+              <e p="LongExposureInfraredFrameArrivedEventArgs.cs" t="Include" />
+              <e p="LongExposureInfraredFrameReader.cs" t="Include" />
+              <e p="LongExposureInfraredFrameReference.cs" t="Include" />
+              <e p="LongExposureInfraredFrameSource.cs" t="Include" />
+              <e p="MultiSourceFrame.cs" t="Include" />
+              <e p="MultiSourceFrameArrivedEventArgs.cs" t="Include" />
+              <e p="MultiSourceFrameReader.cs" t="Include" />
+              <e p="MultiSourceFrameReference.cs" t="Include" />
+              <e p="TrackingConfidence.cs" t="Include" />
+              <e p="TrackingState.cs" t="Include" />
+              <e p="Vector4.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="ref-reps-unity-project.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
