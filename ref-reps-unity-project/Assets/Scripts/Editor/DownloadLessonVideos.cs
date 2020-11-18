@@ -19,18 +19,25 @@ public class DownloadLessonVideos : EditorWindow
     {
         if (GUILayout.Button("Download"))
         {
-            Firebase.Storage.FirebaseStorage storage = Firebase.Storage.FirebaseStorage.DefaultInstance;
-            Firebase.Storage.StorageReference reference = storage.GetReference("training_videos/file_example_MP4_1920_18MG.mp4");
-
-            string local_url = Application.dataPath + "/VideoFiles/TestFirebase.mp4";
-
-            // Download to the local filesystem
-            reference.GetFileAsync(local_url).ContinueWith(task => {
-                if (!task.IsFaulted && !task.IsCanceled) {
-                    Debug.Log("File downloaded.");
-                }
-            });
-
+            DownloadFileFromFirebase();
         }
+    }
+
+    private static void DownloadFileFromFirebase()
+    {
+        Firebase.Storage.FirebaseStorage storage = Firebase.Storage.FirebaseStorage.DefaultInstance;
+        Firebase.Storage.StorageReference
+            reference = storage.GetReference("training_videos/file_example_MP4_1920_18MG.mp4");
+
+        string local_url = Application.dataPath + "/VideoFiles/TestFirebase.mp4";
+
+        // Download to the local filesystem
+        reference.GetFileAsync(local_url).ContinueWith(task =>
+        {
+            if (!task.IsFaulted && !task.IsCanceled)
+            {
+                Debug.Log("File downloaded.");
+            }
+        });
     }
 }
