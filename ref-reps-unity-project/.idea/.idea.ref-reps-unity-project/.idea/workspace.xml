@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VideoFiles/file_example_MP4_1920_18MG.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VideoFiles/file_example_MP4_1920_18MG.mp4.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +43,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideos.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadLessonVideos.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
       </list>
     </option>
   </component>
@@ -99,7 +102,7 @@
       <workItem from="1605662166282" duration="2938000" />
       <workItem from="1605741899481" duration="747000" />
       <workItem from="1605742703009" duration="2282000" />
-      <workItem from="1605835058461" duration="6574000" />
+      <workItem from="1605835058461" duration="7229000" />
     </task>
     <servers />
   </component>

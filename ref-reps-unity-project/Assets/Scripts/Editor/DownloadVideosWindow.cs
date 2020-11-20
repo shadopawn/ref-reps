@@ -21,7 +21,7 @@ public class DownloadVideosWindow : EditorWindow
         _database = new Database();
         if (GUILayout.Button("Download"))
         {
-            _database.DownloadFile("training_videos/file_example_MP4_1920_18MG.mp4");
+            _database.DownloadFile("test_files/test.mp4");
         }
     }
 }

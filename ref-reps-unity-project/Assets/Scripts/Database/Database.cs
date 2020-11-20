@@ -6,20 +6,26 @@ using UnityEngine;
 
 public class Database : MonoBehaviour
 {
-    public void DownloadFile(String path)
+    public void DownloadFile(String path, String destination = "")
     {
         Firebase.Storage.FirebaseStorage storage = Firebase.Storage.FirebaseStorage.DefaultInstance;
         Firebase.Storage.StorageReference
             reference = storage.GetReference(path);
 
         String fileName = Path.GetFileName(path);
-        Debug.Log(fileName);
 
-        string local_url = Application.dataPath +"/VideoFiles/"+ fileName;
-        Debug.Log(local_url);
+        String localURL = "";
+        if (destination == "")
+        {
+            localURL = Application.dataPath + "/VideoFiles/"+ fileName;
+        }
+        else
+        {
+            localURL = destination;
+        }
 
         // Download to the local filesystem
-        reference.GetFileAsync(local_url).ContinueWith(task =>
+        reference.GetFileAsync(localURL).ContinueWith(task =>
         {
             if (!task.IsFaulted && !task.IsCanceled)
             {
