@@ -11,8 +11,7 @@ public class DownloadLessonVideos : EditorWindow
     [MenuItem("Tools/Download lesson videos")]
     public static void CreateWindow()
     {
-        EditorWindow.GetWindow<DownloadLessonVideos>();
-        Debug.Log(Application.dataPath);
+        GetWindow<DownloadLessonVideos>();
     }
 
     private void OnGUI()

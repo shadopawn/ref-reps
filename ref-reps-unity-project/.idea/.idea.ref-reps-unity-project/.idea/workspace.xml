@@ -43,6 +43,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideos.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadLessonVideos.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
       </list>
     </option>
   </component>
@@ -98,6 +99,7 @@
       <workItem from="1605662166282" duration="2938000" />
       <workItem from="1605741899481" duration="747000" />
       <workItem from="1605742703009" duration="2282000" />
+      <workItem from="1605835058461" duration="917000" />
     </task>
     <servers />
   </component>
