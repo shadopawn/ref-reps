@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 using UnityEditor;
 using UnityEngine;
 
-public class DownloadLessonVideos : EditorWindow
+public class DownloadVideosWindow : EditorWindow
 {
     [MenuItem("Tools/Download lesson videos")]
     public static void CreateWindow()
     {
-        GetWindow<DownloadLessonVideos>();
+        GetWindow<DownloadVideosWindow>();
     }
 
     private void OnGUI()
