@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class Database : MonoBehaviour
+public class Database
 {
     public void DownloadFile(String path, String destination = "")
     {

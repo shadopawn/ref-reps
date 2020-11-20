@@ -289,11 +289,15 @@
           <e p="EditMode" t="Include">
             <e p="EditorTests.cs" t="Include" />
           </e>
+          <e p="PlayMode" t="Include">
+            <e p="PlayModeTests.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="EditMode.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="PlayMode.csproj" t="IncludeRecursive" />
       <e p="Project.csproj" t="IncludeRecursive" />
       <e p="ref-reps-unity-project.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
