@@ -10,10 +10,9 @@ namespace Tests
     {
         // A Test behaves as an ordinary method
         [Test]
-        public void EditorTestsSimplePasses()
+        public void SampleTest()
         {
             Assert.AreEqual(true, true);
         }
-
     }
 }
