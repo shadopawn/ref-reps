@@ -14,11 +14,11 @@ namespace Tests
         [UnityTest]
         public IEnumerator SamplePlayModeTest()
         {
-            
-            Assert.AreEqual(true, true);
             yield return null;
+            Assert.AreEqual(true, true);
         }
         
+        /*
         [UnityTest]
         public IEnumerator DownloadVideoTest()
         {
@@ -27,5 +27,6 @@ namespace Tests
             yield return new WaitForSeconds(5);
             Assert.AreEqual(true, true);
         }
+        */
     }
 }
