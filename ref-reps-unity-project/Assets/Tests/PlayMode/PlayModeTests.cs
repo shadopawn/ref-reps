@@ -24,8 +24,8 @@ namespace Tests
         [UnityTest]
         public IEnumerator DownloadVideoTest()
         {
-            Database _database = new Database();
-            _database.DownloadFile("test_files/test.mp4");
+            Database database = new Database();
+            database.DownloadFile("test_files/test.mp4");
             String downloadPath = Application.dataPath + "/VideoFiles/test.mp4";
             bool fileExists = false;
             float time = 0;
