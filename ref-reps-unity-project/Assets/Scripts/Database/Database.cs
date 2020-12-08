@@ -7,11 +7,10 @@ using UnityEngine;
 using Firebase;
 using Firebase.Database;
 using Firebase.Unity.Editor;
+using Object = UnityEngine.Object;
 
 public class Database
 {
-    private String _testResult;
-
     public void DownloadFile(String path, String destination = "")
     {
         Firebase.Storage.FirebaseStorage storage = Firebase.Storage.FirebaseStorage.DefaultInstance;
@@ -43,30 +42,22 @@ public class Database
         });
     }
     
-    public async Task ReadTestValue()
+    public async Task<String> ReadTestValue()
     {
+        String testResult = "";
         await FirebaseDatabase.DefaultInstance
             .GetReference("test")
-            .GetValueAsync().ContinueWith(task => {
+            .GetValueAsync().ContinueWith(task =>
+            {
                 if (task.IsFaulted) {
                     // Handle the error...
                 }
                 else if (task.IsCompleted) {
                     DataSnapshot snapshot = task.Result;
-                    // Do something with snapshot...
-                    Debug.Log(snapshot.Value);
-                    SetTestValue(snapshot.Value);
+                    Debug.Log("In async task");
+                    testResult = snapshot.Value.ToString();
                 }
             });
-    }
-    
-    public void SetTestValue(object TestValue)
-    {
-        _testResult = TestValue.ToString();
-    }
-
-    public String GetTestValue()
-    {
-        return _testResult;
+        return testResult;
     }
 }

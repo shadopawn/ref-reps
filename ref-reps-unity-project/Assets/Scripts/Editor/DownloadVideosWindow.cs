@@ -16,12 +16,16 @@ public class DownloadVideosWindow : EditorWindow
         GetWindow<DownloadVideosWindow>();
     }
 
-    private void OnGUI()
+    private async void OnGUI()
     {
         _database = new Database();
         if (GUILayout.Button("Download"))
         {
-            _database.DownloadFile("test_files/test.mp4");
+            //_database.DownloadFile("test_files/test.mp4");
+            Debug.Log("before");
+            var result = await _database.ReadTestValue();
+            Debug.Log("after");
+            Debug.Log("Result: "+result);
         }
     }
 }

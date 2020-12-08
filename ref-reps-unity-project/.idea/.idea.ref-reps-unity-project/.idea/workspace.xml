@@ -22,7 +22,9 @@
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +45,11 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideos.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadLessonVideos.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
         <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
       </list>
     </option>
   </component>
