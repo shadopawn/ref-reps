@@ -30,12 +30,11 @@ namespace Tests
         [Test]
         public void RetrieveData()
         {
-            //Database database = new Database();
-            //String result = "";
             var task = Task.Run(async () =>
             {
                 return await _database.ReadTestValue();
             });
+            Debug.Log(task.Result);
             Assert.AreEqual(task.Result, "test");
         }
         

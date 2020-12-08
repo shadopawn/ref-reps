@@ -42,6 +42,25 @@ public class Database
         });
     }
     
+    public async Task<String> GetLessonPacks()
+    {
+        String lessonPacks = "";
+        await FirebaseDatabase.DefaultInstance
+            .GetReference("lesson_packs")
+            .GetValueAsync().ContinueWith(task =>
+            {
+                if (task.IsFaulted) {
+                    // Handle the error...
+                }
+                else if (task.IsCompleted) {
+                    DataSnapshot snapshot = task.Result;
+                    lessonPacks = snapshot.GetRawJsonValue();
+                    Debug.Log(snapshot.GetRawJsonValue());
+                }
+            });
+        return lessonPacks;
+    }
+    
     public async Task<String> ReadTestValue()
     {
         String testResult = "";
