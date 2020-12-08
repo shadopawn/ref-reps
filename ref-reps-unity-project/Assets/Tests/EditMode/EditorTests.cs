@@ -14,5 +14,13 @@ namespace Tests
         {
             Assert.AreEqual(true, true);
         }
+        
+        [Test]
+        public void RetrieveData()
+        {
+            Database database = new Database();
+            database.ReadValue();
+            Assert.AreEqual(true, true);
+        }
     }
 }
