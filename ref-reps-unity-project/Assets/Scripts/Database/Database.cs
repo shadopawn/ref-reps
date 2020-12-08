@@ -42,7 +42,7 @@ public class Database
         });
     }
     
-    public async Task<String> GetLessonPacks()
+    public async Task<String> GetLessonPacksJson()
     {
         String lessonPacks = "";
         await FirebaseDatabase.DefaultInstance
@@ -55,7 +55,6 @@ public class Database
                 else if (task.IsCompleted) {
                     DataSnapshot snapshot = task.Result;
                     lessonPacks = snapshot.GetRawJsonValue();
-                    Debug.Log(snapshot.GetRawJsonValue());
                 }
             });
         return lessonPacks;

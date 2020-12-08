@@ -5,20 +5,6 @@ using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
-[Serializable]
-public class LessonPacks
-{
-    public LessonPack[] lessonPacksList;
-}
-
-[Serializable]
-public class LessonPack
-{
-    public int level;
-    public float timeElapsed;
-    public string playerName;
-}
-
 public class VideoSelection : MonoBehaviour
 {
 
@@ -26,10 +12,19 @@ public class VideoSelection : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
-        var result = await _database.GetLessonPacks();
+        var json = await _database.GetLessonPacksJson();
         
-        JObject lessonPacksJson = JObject.Parse(result);
-        Debug.Log((String)lessonPacksJson["lesson_pack0"]?["index"]);
+        JObject lessonPacks = JObject.Parse(json);
+        JToken lessonPairs = lessonPacks["lesson_pack0"]?["lesson_pairs"];
+        if (lessonPairs != null)
+            foreach (JToken lessonPair in lessonPairs)
+            {
+                foreach (JToken videos in lessonPair.Children())
+                {
+                    Debug.Log(videos.Value<String>("call_video"));
+                    Debug.Log(videos.Value<String>("analysis_video"));
+                }
+            }
     }
 
     // Update is called once per frame
