@@ -26,30 +26,27 @@ public class VideoSelection : MonoBehaviour
         String json = await _database.GetLessonPacksJson();
         
         JObject lessonPacks = JObject.Parse(json);
-        JToken lessonPairs = lessonPacks["lesson_pack0"]?["lesson_pairs"];
-        if (lessonPairs != null)
-        {
-            foreach (JToken lessonPair in lessonPairs)
-            {
-                foreach (JToken videos in lessonPair.Children())
-                {
-                    String callVideoFileName = videos.Value<String>("call_video");
-                    String analysisVideoFileName = videos.Value<String>("analysis_video");
-                    String callVideoURL = await _database.GetVideoURL(callVideoFileName);
-                    String analysisVideoURL = await _database.GetVideoURL(analysisVideoFileName);
-                    CreateNewButton(callVideoURL, callVideoFileName);
-                    CreateNewButton(analysisVideoURL, analysisVideoFileName);
 
+        foreach (KeyValuePair<string, JToken> lessonPack in lessonPacks)
+        {
+            JToken lessonPairs = lessonPack.Value["lesson_pairs"];
+            if (lessonPairs != null)
+            {
+                foreach (JToken lessonPair in lessonPairs)
+                {
+                    foreach (JToken videos in lessonPair.Children())
+                    {
+                        String callVideoFileName = videos.Value<String>("call_video");
+                        String analysisVideoFileName = videos.Value<String>("analysis_video");
+                        String callVideoURL = await _database.GetVideoURL(callVideoFileName);
+                        String analysisVideoURL = await _database.GetVideoURL(analysisVideoFileName);
+                        CreateNewButton(callVideoURL, callVideoFileName);
+                        CreateNewButton(analysisVideoURL, analysisVideoFileName);
+
+                    }
                 }
             }
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void PlayVideo(String videoUrl)
