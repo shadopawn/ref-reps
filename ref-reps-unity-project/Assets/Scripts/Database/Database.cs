@@ -41,6 +41,20 @@ public class Database
             }
         });
     }
+
+    public async Task<String> GetVideoURL(String fileName)
+    {
+        Firebase.Storage.FirebaseStorage storage = Firebase.Storage.FirebaseStorage.DefaultInstance;
+        Firebase.Storage.StorageReference reference = storage.GetReference("training_videos/"+fileName);
+
+        String videoURL = "";
+        await reference.GetDownloadUrlAsync().ContinueWith((Task<Uri> task) => {
+            if (!task.IsFaulted && !task.IsCanceled) {
+                videoURL = task.Result.ToString();
+            }
+        });
+        return videoURL;
+    }
     
     public async Task<String> GetLessonPacksJson()
     {

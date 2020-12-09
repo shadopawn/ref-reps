@@ -18,11 +18,12 @@ public class VideoSelection : MonoBehaviour
         _videoPlayer = GameObject.Find("CurrentVideo")?.GetComponent<VideoPlayer>();
         _videoSelectionCanvas = GameObject.Find("VideoSelectionCanvas");
         
-        var json = await _database.GetLessonPacksJson();
+        String json = await _database.GetLessonPacksJson();
         
         JObject lessonPacks = JObject.Parse(json);
         JToken lessonPairs = lessonPacks["lesson_pack0"]?["lesson_pairs"];
         if (lessonPairs != null)
+        {
             foreach (JToken lessonPair in lessonPairs)
             {
                 foreach (JToken videos in lessonPair.Children())
@@ -31,6 +32,11 @@ public class VideoSelection : MonoBehaviour
                     Debug.Log(videos.Value<String>("analysis_video"));
                 }
             }
+        }
+        
+        String videoURL = await _database.GetVideoURL("test.mp4");
+        Debug.Log(videoURL);
+
     }
 
     // Update is called once per frame
