@@ -21,11 +21,7 @@ public class DownloadVideosWindow : EditorWindow
         _database = new Database();
         if (GUILayout.Button("Download"))
         {
-            //_database.DownloadFile("test_files/test.mp4");
-            Debug.Log("before");
-            var result = await _database.ReadTestValue();
-            Debug.Log("after");
-            Debug.Log("Result: "+result);
+            _database.DownloadFile("test_files/test.mp4");
         }
     }
 }
