@@ -4,14 +4,20 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class VideoSelection : MonoBehaviour
 {
+    private VideoPlayer _videoPlayer;
+    private GameObject _videoSelectionCanvas;
 
     private Database _database = new Database();
     // Start is called before the first frame update
     async void Start()
     {
+        _videoPlayer = GameObject.Find("CurrentVideo")?.GetComponent<VideoPlayer>();
+        _videoSelectionCanvas = GameObject.Find("VideoSelectionCanvas");
+        
         var json = await _database.GetLessonPacksJson();
         
         JObject lessonPacks = JObject.Parse(json);
@@ -31,5 +37,12 @@ public class VideoSelection : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlayVideo(String videoUrl)
+    {
+        _videoPlayer.url = videoUrl;
+        _videoPlayer.Play();
+        _videoSelectionCanvas.SetActive(false);
     }
 }
