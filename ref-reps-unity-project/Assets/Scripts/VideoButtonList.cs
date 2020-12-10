@@ -14,9 +14,9 @@ public class VideoSelection : MonoBehaviour
     private VideoPlayer _videoPlayer;
     private GameObject _videoSelectionCanvas;
     private GameObject _buttonList;
-
     private Database _database = new Database();
-    // Start is called before the first frame update
+    
+    
     async void Start()
     {
         _videoPlayer = GameObject.Find("CurrentVideo")?.GetComponent<VideoPlayer>();
