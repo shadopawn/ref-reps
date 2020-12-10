@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 239623546}
   - component: {fileID: 239623545}
   m_Layer: 0
-  m_Name: VideoSelection
+  m_Name: VideoButtonListCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

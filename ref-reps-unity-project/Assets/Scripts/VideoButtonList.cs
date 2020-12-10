@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 
-public class VideoSelection : MonoBehaviour
+public class VideoButtonList : MonoBehaviour
 {
     public GameObject buttonPrefab;
     
@@ -42,7 +42,6 @@ public class VideoSelection : MonoBehaviour
                         String analysisVideoURL = await _database.GetVideoURL(analysisVideoFileName);
                         CreateNewButton(callVideoURL, callVideoFileName);
                         CreateNewButton(analysisVideoURL, analysisVideoFileName);
-
                     }
                 }
             }

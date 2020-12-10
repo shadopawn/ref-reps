@@ -199,9 +199,9 @@
             <e p="UIBarScript.cs" t="Include" />
             <e p="UIScriptManager.cs" t="Include" />
           </e>
+          <e p="VideoButtonList.cs" t="Include" />
           <e p="videoPlayerScript.cs" t="Include" />
           <e p="VideoSelectExitButton.cs" t="Include" />
-          <e p="VideoSelection.cs" t="Include" />
           <e p="ViewLessonAgainScript.cs" t="Include" />
           <e p="VirtualCursorKinectExecuteScript.cs" t="Include" />
           <e p="virtualCursorScript.cs" t="Include" />
