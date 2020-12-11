@@ -27,15 +27,15 @@ namespace Tests
             Assert.AreEqual(true, true);
         }
         
-        [Test]
-        public void RetrieveData()
+        [UnityTest]
+        public async Task RetrieveData()
         {
             var task = Task.Run(async () =>
             {
                 return await _database.ReadTestValue();
-            });
-            Debug.Log(task.Result);
-            Assert.AreEqual(task.Result, "test");
+            }).GetAwaiter().GetResult();
+            Debug.Log(task);
+            Assert.AreEqual(task, "test");
         }
         
         [Test]
