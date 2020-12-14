@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoTestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoSelection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VideoFiles/test.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VideoFiles/test.mp4.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,26 +35,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/TestLaunchers/PlaymodeLauncher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_PackageUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/TestLaunchers/PlaymodeLauncher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideos.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadLessonVideos.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
-        <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/DownloadVideosWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoSelection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -67,6 +59,7 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29989868" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -114,6 +107,7 @@
       <workItem from="1605990262836" duration="7710000" />
       <workItem from="1607368920338" duration="10170000" />
       <workItem from="1607468888119" duration="17340000" />
+      <workItem from="1607983434140" duration="1343000" />
     </task>
     <servers />
   </component>

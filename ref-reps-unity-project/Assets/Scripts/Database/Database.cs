@@ -37,7 +37,8 @@ public class Database
             }
             else
             {
-                Debug.LogError("File failed to download");
+                Debug.Log("File failed to download.");
+                throw new Exception("File failed to download");
             }
         });
     }

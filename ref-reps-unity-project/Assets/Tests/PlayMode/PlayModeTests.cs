@@ -42,5 +42,16 @@ namespace Tests
             yield return new WaitForSeconds(0.6f);
             File.Delete(downloadPath);
         }
+        
+        [UnityTest]
+        public IEnumerator DownloadVideoFailedTest()
+        {
+            Database database = new Database();
+            database.DownloadFile("test_files/nonExistent.mp4");
+            String downloadPath = Application.dataPath + "/VideoFiles/nonExistent.mp4";
+            bool fileExists = File.Exists(downloadPath);
+            Assert.False(fileExists);
+            yield return null;
+        }
     }
 }
