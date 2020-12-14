@@ -86,7 +86,6 @@ public class Database
                 }
                 else if (task.IsCompleted) {
                     DataSnapshot snapshot = task.Result;
-                    Debug.Log("In async task");
                     testResult = snapshot.Value.ToString();
                 }
             });

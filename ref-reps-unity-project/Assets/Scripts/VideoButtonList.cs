@@ -48,7 +48,7 @@ public class VideoButtonList : MonoBehaviour
         }
     }
 
-    public void PlayVideo(String videoUrl)
+    private void PlayVideo(String videoUrl)
     {
         _videoPlayer.url = videoUrl;
         _videoPlayer.Play();
