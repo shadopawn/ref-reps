@@ -30,12 +30,8 @@ namespace Tests
         [UnityTest]
         public async Task RetrieveData()
         {
-            var task = Task.Run(async () =>
-            {
-                return await _database.ReadTestValue();
-            }).GetAwaiter().GetResult();
-            Debug.Log(task);
-            Assert.AreEqual(task, "test");
+            var testValue = await _database.ReadTestValue();
+            Assert.AreEqual(testValue, "test");
         }
         
         [Test]
