@@ -23,8 +23,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VideoFiles/test.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VideoFiles/test.mp4.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -107,7 +106,7 @@
       <workItem from="1605990262836" duration="7710000" />
       <workItem from="1607368920338" duration="10170000" />
       <workItem from="1607468888119" duration="17340000" />
-      <workItem from="1607983434140" duration="1343000" />
+      <workItem from="1607983434140" duration="2692000" />
     </task>
     <servers />
   </component>
