@@ -156,6 +156,9 @@
           <e p="GameStore.cs" t="Include" />
           <e p="HalfSpeedScript.cs" t="Include" />
           <e p="handScript.cs" t="Include" />
+          <e p="Helpers" t="Include">
+            <e p="JsonParser.cs" t="Include" />
+          </e>
           <e p="IconInteractScript.cs" t="Include" />
           <e p="KinectVideoScript.cs" t="Include" />
           <e p="KinectVideoScriptTitle.cs" t="Include" />
