@@ -165,6 +165,7 @@
           <e p="LessonConstructorScript.cs" t="Include" />
           <e p="LessonData.cs" t="Include" />
           <e p="LessonModuleController.cs" t="Include" />
+          <e p="LessonPackButtonList.cs" t="Include" />
           <e p="LessonSelectScript.cs" t="Include" />
           <e p="MidPanelScript.cs" t="Include" />
           <e p="NextLessonScript.cs" t="Include" />

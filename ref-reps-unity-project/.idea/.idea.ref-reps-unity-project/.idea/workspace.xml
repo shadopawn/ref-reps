@@ -22,7 +22,7 @@
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VideoSelectExitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/VideoSelectExitButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.11/UnityEditor.TestRunner/TestLaunchers/PlaymodeLauncher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,6 +48,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/VideoSelectExitButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -114,7 +117,7 @@
       <workItem from="1611435650565" duration="8000" />
       <workItem from="1611534336444" duration="2261000" />
       <workItem from="1611712030387" duration="2593000" />
-      <workItem from="1611800156273" duration="6830000" />
+      <workItem from="1611800156273" duration="8193000" />
     </task>
     <servers />
   </component>
@@ -137,71 +140,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="2005" height="403" key="GridCell.Tab.0.bottom" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.0.bottom/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.0.center" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.0.center/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.0.left" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.0.left/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.0.right" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.0.right/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.1.bottom" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.1.bottom/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.1.center" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.1.center/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.1.left" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.1.left/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.1.right" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.1.right/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.2.bottom" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.2.bottom/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.2.center" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.2.center/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.2.left" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.2.left/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.2.right" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.2.right/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.3.bottom" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.3.bottom/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.3.center" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.3.center/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.3.left" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.3.left/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
-    <state width="2005" height="403" key="GridCell.Tab.3.right" timestamp="1607468860687">
-      <screen x="0" y="0" width="2048" height="1112" />
-    </state>
-    <state width="2005" height="403" key="GridCell.Tab.3.right/0.0.2048.1112/2560.0.2048.1112@0.0.2048.1112" timestamp="1607468860687" />
   </component>
 </project>
