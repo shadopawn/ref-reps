@@ -1139,6 +1139,8 @@ MonoBehaviour:
   thisButton: {fileID: 9120924824874526906}
   VideoParent: {fileID: 4697752925981251302}
   LessonParent: {fileID: 3026521045909869135}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!1 &2685349041805485647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,6 +1658,8 @@ MonoBehaviour:
   thisButton: {fileID: 567931100477233519}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!1 &3497308766292586038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3587,6 +3591,8 @@ MonoBehaviour:
   thisButton: {fileID: 8933726367940132370}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!1 &5943249860913929376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3789,6 +3795,8 @@ MonoBehaviour:
   thisButton: {fileID: 5359966302742328952}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!1 &6192676151595121631
 GameObject:
   m_ObjectHideFlags: 0
@@ -5554,6 +5562,9 @@ MonoBehaviour:
   thisButton: {fileID: 9120924824874526906}
   VideoParent: {fileID: 4697752925981251302}
   LessonParent: {fileID: 3026521045909869135}
+  PinWheelButton: {fileID: 4558624168400184302, guid: df63a459e5f9b38419e575f90c92037c,
+    type: 3}
+  lessonPairPrefabs: []
 --- !u!95 &9175231553086166160
 Animator:
   serializedVersion: 3
