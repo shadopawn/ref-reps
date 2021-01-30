@@ -19,7 +19,6 @@ public class LessonPackButtonList : MonoBehaviour
 
         foreach (var lessonPackName in lessonPackNames)
         {
-            print(lessonPackName);
             CreateNewButton(lessonPackName);
         }
     }

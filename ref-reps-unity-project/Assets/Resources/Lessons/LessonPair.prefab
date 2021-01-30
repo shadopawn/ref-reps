@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playVideo: {fileID: 0}
   analysisVideo: {fileID: 0}
-  calltime: 0
-  analysisEndTime: 0
+  calltime: 2147483647
+  analysisEndTime: 2147483647
   sport: 
   calls:
   - 

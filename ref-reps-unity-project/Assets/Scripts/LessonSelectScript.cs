@@ -27,7 +27,7 @@ public class LessonSelectScript : MonoBehaviour
     }
 
     public void titleExecute(){
-        LessonTitle.GetComponent<Text>().text = thisButton.transform.Find("Text").GetComponent<Text>().text;
+        LessonTitle.GetComponent<Text>().text = GetComponentInChildren<Text>().text;
         PinWheel.GetComponent<PinWheel>().DestroyChildren();
         for(int i = 0; i < VideoParent.transform.childCount; i++){
             GameObject pinObject = Instantiate(VideoParent.transform.GetChild(i).gameObject, transform.position, Quaternion.identity);
