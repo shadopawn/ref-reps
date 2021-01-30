@@ -11,6 +11,9 @@ public class LessonSelectScript : MonoBehaviour
     public GameObject VideoParent;
     GameObject LessonTitle;
     public GameObject LessonParent;
+    
+    
+    private List<GameObject> lessonPairPrefabs;
 
     // Start is called before the first frame update
     void Start()
@@ -38,5 +41,10 @@ public class LessonSelectScript : MonoBehaviour
         PinWheel.GetComponent<PinWheel>().FindChildren();
         LessonBackground.GetComponent<Animator>().SetBool("isSelected", true);
         thisButton.GetComponent<Animator>().SetBool("isSelected", true);
+    }
+    
+    public void SetLessonPairPrefabs(List<GameObject> prefabs)
+    {
+        lessonPairPrefabs = prefabs;
     }
 }

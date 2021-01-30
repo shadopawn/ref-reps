@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,11 +16,11 @@ public class LessonPackButtonList : MonoBehaviour
     async void Start()
     {
         String json = await _database.GetLessonPacksJson();
-        List<String> lessonPackNames = _jsonParser.GetLessonPackNames(json);
+        List<(String name, JToken lessonPairs)> lessonPacks = _jsonParser.GetLessonPacks(json);
 
-        foreach (var lessonPackName in lessonPackNames)
+        foreach (var lessonPack in lessonPacks)
         {
-            CreateNewButton(lessonPackName);
+            CreateNewButton(lessonPack.name);
         }
     }
 
@@ -28,5 +29,10 @@ public class LessonPackButtonList : MonoBehaviour
         GameObject newButton = Instantiate(lessonPackButtonPrefab, transform);
         Text buttonTextComponent = newButton.GetComponentInChildren<Text>();
         buttonTextComponent.text = buttonText;
+    }
+
+    public List<GameObject> CreateLessonPairs()
+    {
+        return null;
     }
 }

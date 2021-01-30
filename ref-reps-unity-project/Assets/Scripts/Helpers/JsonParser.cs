@@ -6,17 +6,19 @@ using Newtonsoft.Json.Linq;
 public class JsonParser
 {
 
-    public List<String> GetLessonPackNames(String json)
+    public List<(String name, JToken lessonPairs)> GetLessonPacks(String json)
     {
         JObject lessonPacks = JObject.Parse(json);
 
-        List<String> lessonPackNames = new List<string>();
+        List<(String, JToken)> LessonPacks = new List<(String, JToken)>();
         foreach (KeyValuePair<string, JToken> lessonPack in lessonPacks)
         {
-            lessonPackNames.Add(lessonPack.Value["name"]?.ToString());
+            String name = lessonPack.Value["name"]?.ToString();
             JToken lessonPairs = lessonPack.Value["lesson_pairs"];
+            (String, JToken) nameAndPairs = (name, lessonPairs);
+            LessonPacks.Add(nameAndPairs);
         }
 
-        return lessonPackNames;
+        return LessonPacks;
     }
 }
