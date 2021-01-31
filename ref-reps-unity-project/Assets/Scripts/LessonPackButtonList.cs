@@ -32,22 +32,9 @@ public class LessonPackButtonList : MonoBehaviour
         buttonTextComponent.text = buttonText;
         
         //set lessonPairPrefabs on LessonSelectScript attached to LessonPackButton 
-        List<GameObject> lessonPairObjects = CreateLessonPairs(lessonPairs);
-        lessonPackButton.GetComponent<LessonSelectScript>().SetLessonPairPrefabs(lessonPairObjects);
+        List<LessonPairData> lessonPairObjects = _jsonParser.CreateLessonPairs(lessonPairs);
+        lessonPackButton.GetComponent<LessonSelectScript>().SetLessonPairDataList(lessonPairObjects);
         
     }
-
-    public List<GameObject> CreateLessonPairs(JToken lessonPairs)
-    {
-        List<GameObject> lessonPairObjects = new List<GameObject>();
-        for (int i = 0; i < lessonPairs.Count(); i++)
-        {
-            //This game object just gets placed at the root of the tree
-            GameObject lessonPairObject = new GameObject();
-            LessonConstructorScript constructorScript = lessonPairObject.AddComponent<LessonConstructorScript>();
-            //TODO: properly populate constructorScript info
-            lessonPairObjects.Add(lessonPairObject);
-        }
-        return lessonPairObjects;
-    }
+    
 }

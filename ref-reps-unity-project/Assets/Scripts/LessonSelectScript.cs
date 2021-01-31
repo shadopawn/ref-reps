@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class LessonSelectScript : MonoBehaviour
@@ -15,7 +16,10 @@ public class LessonSelectScript : MonoBehaviour
 
     public GameObject PinWheelButton;
     
-    public List<GameObject> lessonPairPrefabs;
+    private List<LessonPairData> _lessonPairDataList;
+    
+    private LessonModuleController _lessonModuleController;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +27,9 @@ public class LessonSelectScript : MonoBehaviour
         LessonTitle = GameObject.Find("LessonTitle");
         PinWheelCompoonenet = GameObject.Find("PinWheel")?.GetComponent<PinWheel>();
         LessonBackground = GameObject.Find("LessonBackground");
+        
+        _lessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
+
     }
 
     // Update is called once per frame
@@ -35,18 +42,20 @@ public class LessonSelectScript : MonoBehaviour
         LessonTitle.GetComponent<Text>().text = GetComponentInChildren<Text>().text;
         
         PinWheelCompoonenet.DestroyChildren();
-        for(int i = 0; i < lessonPairPrefabs.Count(); i++)
+        for(int i = 0; i < _lessonPairDataList.Count(); i++)
         {
             CreatPinWheelButton(i);
         }
         
         LessonBackground.GetComponent<Animator>().SetBool("isSelected", true);
         thisButton.GetComponent<Animator>().SetBool("isSelected", true);
+        
+        _lessonModuleController.SetLessonPairDataList(_lessonPairDataList);
     }
     
-    public void SetLessonPairPrefabs(List<GameObject> prefabs)
+    public void SetLessonPairDataList(List<LessonPairData> lessonPairData)
     {
-        lessonPairPrefabs = prefabs;
+        _lessonPairDataList = lessonPairData;
     }
 
     private GameObject CreatPinWheelButton(int index)

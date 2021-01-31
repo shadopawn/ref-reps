@@ -6,8 +6,7 @@ public class LessonModuleController : MonoBehaviour
 {
     public List<string> lessons;
     
-    [SerializeField]
-    private List<GameObject> lessonPairPrefabs;
+    public List<LessonPairData> lessonPairDataList;
 
     public int lessonNum = 1;
 
@@ -15,8 +14,8 @@ public class LessonModuleController : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void SetLessonPairPrefabs(List<GameObject> prefabs)
+    public void SetLessonPairDataList(List<LessonPairData> lessonPairData)
     {
-        lessonPairPrefabs = prefabs;
+        lessonPairDataList = lessonPairData;
     }
 }
