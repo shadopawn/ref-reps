@@ -24,10 +24,11 @@ public class videoPlayerScript : MonoBehaviour
     void Start()
     {
         LessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
+        LessonPairData lessonPairData = LessonModuleController.GetCurrentLessonPair();
         LessonObject = GameObject.FindWithTag("Lesson").GetComponent<LessonConstructorScript>();
         vPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
-        playClip = LessonObject.playVideo;
-        // vPlayer.url = LessonObject.url;
+        //playClip = LessonObject.playVideo;
+        vPlayer.url = lessonPairData.playVideoUrl;
         vPlayer.clip = playClip;
         vPlayer.Play();
         MakeTheCallAnim = MakeTheCallUI.GetComponent<Animator>();

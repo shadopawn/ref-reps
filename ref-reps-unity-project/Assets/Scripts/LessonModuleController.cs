@@ -18,4 +18,9 @@ public class LessonModuleController : MonoBehaviour
     {
         lessonPairDataList = lessonPairData;
     }
+
+    public LessonPairData GetCurrentLessonPair()
+    {
+        return lessonPairDataList[lessonNum];
+    }
 }
