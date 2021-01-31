@@ -183,6 +183,9 @@
           <e p="SameRect.cs" t="Include" />
           <e p="SameText.cs" t="Include" />
           <e p="SaveScript.cs" t="Include" />
+          <e p="ScriptableObjects" t="Include">
+            <e p="LessonPairData.cs" t="Include" />
+          </e>
           <e p="ScrollDown.cs" t="Include" />
           <e p="ScrollUp.cs" t="Include" />
           <e p="slideBar.cs" t="Include" />

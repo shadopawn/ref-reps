@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_PackageUtilities.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -60,6 +57,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -130,7 +128,7 @@
       <workItem from="1611800156273" duration="10666000" />
       <workItem from="1611850322857" duration="102000" />
       <workItem from="1611865538077" duration="5385000" />
-      <workItem from="1611972044444" duration="15807000" />
+      <workItem from="1611972044444" duration="17205000" />
     </task>
     <servers />
   </component>
