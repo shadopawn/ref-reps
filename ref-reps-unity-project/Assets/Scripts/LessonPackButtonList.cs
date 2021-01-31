@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -25,14 +26,14 @@ public class LessonPackButtonList : MonoBehaviour
         }
     }
 
-    private void CreateNewButton(String buttonText, JToken lessonPairs)
+    private async Task CreateNewButton(String buttonText, JToken lessonPairs)
     {
         GameObject lessonPackButton = Instantiate(lessonPackButtonPrefab, transform);
         Text buttonTextComponent = lessonPackButton.GetComponentInChildren<Text>();
         buttonTextComponent.text = buttonText;
         
         //set lessonPairPrefabs on LessonSelectScript attached to LessonPackButton 
-        List<LessonPairData> lessonPairObjects = _jsonParser.CreateLessonPairs(lessonPairs);
+        List<LessonPairData> lessonPairObjects = await _jsonParser.CreateLessonPairs(lessonPairs);
         lessonPackButton.GetComponent<LessonSelectScript>().SetLessonPairDataList(lessonPairObjects);
         
     }

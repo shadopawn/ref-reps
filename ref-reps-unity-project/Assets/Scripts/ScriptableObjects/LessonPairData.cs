@@ -12,6 +12,6 @@ public class LessonPairData : ScriptableObject
     public int calltime = Int32.MaxValue;
     public int analysisEndTime = Int32.MaxValue;
     public string sport;
-    public string[] calls;
+    public List<String> calls = new List<string>();
     public string correctCall;
 }
