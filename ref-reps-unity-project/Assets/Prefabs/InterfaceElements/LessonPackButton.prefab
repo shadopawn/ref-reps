@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: 5032624919677016134}
   - component: {fileID: 3460487151894361473}
   - component: {fileID: 1158431285243595761}
-  - component: {fileID: 5032753003104911479}
+  - component: {fileID: 8446956134663934310}
   m_Layer: 5
   m_Name: CursorNode
   m_TagString: swipeButton
@@ -1124,7 +1124,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &5032753003104911479
+--- !u!114 &8446956134663934310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1133,14 +1133,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2382951406123530047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60d930224547590449eb525cc80a37e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 52b0887635593b14db0fb1bf484e1ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisButton: {fileID: 9120924824874526906}
-  VideoParent: {fileID: 4697752925981251302}
-  LessonParent: {fileID: 3026521045909869135}
-  PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
+  parentButton: {fileID: 9120924824874526906}
 --- !u!1 &2685349041805485647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1655,6 @@ MonoBehaviour:
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!1 &3497308766292586038
 GameObject:
   m_ObjectHideFlags: 0
@@ -3592,7 +3587,6 @@ MonoBehaviour:
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!1 &5943249860913929376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,7 +3790,6 @@ MonoBehaviour:
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!1 &6192676151595121631
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,7 +5557,6 @@ MonoBehaviour:
   LessonParent: {fileID: 3026521045909869135}
   PinWheelButton: {fileID: 4558624168400184302, guid: df63a459e5f9b38419e575f90c92037c,
     type: 3}
-  lessonPairPrefabs: []
 --- !u!95 &9175231553086166160
 Animator:
   serializedVersion: 3

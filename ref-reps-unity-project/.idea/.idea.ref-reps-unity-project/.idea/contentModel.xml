@@ -139,6 +139,7 @@
           <e p="CallMake.cs" t="Include" />
           <e p="ColorSourceManagerTitle.cs" t="Include" />
           <e p="ColorSourceViewTitle.cs" t="Include" />
+          <e p="CursorNode.cs" t="Include" />
           <e p="CursorStart.cs" t="Include" />
           <e p="Database" t="Include">
             <e p="Database.cs" t="Include" />
