@@ -8,7 +8,7 @@ public class LessonSelectScript : MonoBehaviour
 {
     GameObject LessonBackground;
     public GameObject thisButton;
-    GameObject PinWheel;
+    PinWheel PinWheelCompoonenet;
     public GameObject VideoParent;
     GameObject LessonTitle;
     public GameObject LessonParent;
@@ -21,7 +21,7 @@ public class LessonSelectScript : MonoBehaviour
     void Start()
     {
         LessonTitle = GameObject.Find("LessonTitle");
-        PinWheel = GameObject.Find("PinWheel");
+        PinWheelCompoonenet = GameObject.Find("PinWheel")?.GetComponent<PinWheel>();
         LessonBackground = GameObject.Find("LessonBackground");
     }
 
@@ -33,12 +33,13 @@ public class LessonSelectScript : MonoBehaviour
 
     public void titleExecute(){
         LessonTitle.GetComponent<Text>().text = GetComponentInChildren<Text>().text;
-        PinWheel.GetComponent<PinWheel>().DestroyChildren();
+        
+        PinWheelCompoonenet.DestroyChildren();
         for(int i = 0; i < lessonPairPrefabs.Count(); i++)
         {
             CreatPinWheelButton(i);
         }
-        PinWheel.GetComponent<PinWheel>().FindChildren();
+        
         LessonBackground.GetComponent<Animator>().SetBool("isSelected", true);
         thisButton.GetComponent<Animator>().SetBool("isSelected", true);
     }
@@ -48,11 +49,12 @@ public class LessonSelectScript : MonoBehaviour
         lessonPairPrefabs = prefabs;
     }
 
-    private void CreatPinWheelButton(int index)
+    private GameObject CreatPinWheelButton(int index)
     {
-        GameObject pinButton = Instantiate(PinWheelButton, transform.position, Quaternion.identity, PinWheel.transform);
+        GameObject pinButton = Instantiate(PinWheelButton, transform.position, Quaternion.identity, PinWheelCompoonenet.transform);
         pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
         Text buttonText = pinButton.GetComponentInChildren<Text>();
         buttonText.text = "Video " + index;
+        return pinButton;
     }
 }

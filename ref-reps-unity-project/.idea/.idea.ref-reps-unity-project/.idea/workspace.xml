@@ -21,9 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InterfaceElements/LessonPackButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InterfaceElements/LessonPackButton.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +54,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/VideoSelectExitButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -124,7 +130,7 @@
       <workItem from="1611800156273" duration="10666000" />
       <workItem from="1611850322857" duration="102000" />
       <workItem from="1611865538077" duration="5385000" />
-      <workItem from="1611972044444" duration="7099000" />
+      <workItem from="1611972044444" duration="15807000" />
     </task>
     <servers />
   </component>

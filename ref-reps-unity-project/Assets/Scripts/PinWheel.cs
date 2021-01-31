@@ -1,39 +1,43 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PinWheel : MonoBehaviour
 {
-    public List<GameObject> wheelObjects;
 
     public int frontObject;
     // Start is called before the first frame update
-    void Start()
-    {
-        FindChildren();
-    }
-
-    public void FindChildren(){
-        for(int i = 0; i < transform.childCount; i++){
-            wheelObjects.Add(transform.GetChild(i).gameObject);
-        }
-    }
 
     public void DestroyChildren(){
-        for(int i = 0; i < wheelObjects.Count; i++){
-            wheelObjects.RemoveAt(0);
-        }
         for(int i = 0; i < transform.childCount; i++){
             Destroy(transform.GetChild(i).gameObject);
         }
         
     }
 
+    public String getCurrentButtonText()
+    {
+        if (frontObject >= 0 && frontObject < transform.childCount)
+        {
+            return transform.GetChild(frontObject).GetComponentInChildren<Text>()?.text;
+        }
+        return "";
+    }
+
+    public GameObject GetCurrentLessonParent()
+    {
+        if (frontObject >= 0 && frontObject < transform.childCount)
+        {
+            return transform.GetChild(frontObject).GetComponentInChildren<WatchLessonScript>()?.LessonParent;
+        }
+        return null;
+    }
+
     // Update is called once per frame
     void Update()
     {
-
-
         for(int i = 0; i < transform.childCount; i++){
             int wheelIndex;
             if(i == frontObject - 1 || (i == transform.childCount - 1 && frontObject - 1 < 0)){
@@ -63,12 +67,12 @@ public class PinWheel : MonoBehaviour
             frontObject--;
         }
 
-        if(frontObject >= wheelObjects.Count){
+        if(frontObject >= transform.childCount){
             frontObject = 0;
         }
 
         if(frontObject < 0){
-            frontObject = wheelObjects.Count-1;
+            frontObject = transform.childCount-1;
         }
     }
 }

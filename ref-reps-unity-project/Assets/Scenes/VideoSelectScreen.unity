@@ -2409,6 +2409,8 @@ MonoBehaviour:
   thisButton: {fileID: 1478112267}
   VideoParent: {fileID: 1607743947}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &130339969
 Animator:
   serializedVersion: 3
@@ -2952,6 +2954,8 @@ MonoBehaviour:
   thisButton: {fileID: 1999117268}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &172026639
 Animator:
   serializedVersion: 3
@@ -4636,6 +4640,8 @@ MonoBehaviour:
   thisButton: {fileID: 286631781}
   VideoParent: {fileID: 697387240}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!114 &286631785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7662,6 +7668,8 @@ MonoBehaviour:
   thisButton: {fileID: 23634292}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &436526268
 Animator:
   serializedVersion: 3
@@ -10348,6 +10356,8 @@ MonoBehaviour:
   thisButton: {fileID: 2012567441}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &642791731
 Animator:
   serializedVersion: 3
@@ -10627,6 +10637,8 @@ MonoBehaviour:
   thisButton: {fileID: 1236512166}
   VideoParent: {fileID: 1787903964}
   LessonParent: {fileID: 1414433576}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!114 &643668055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14536,6 +14548,8 @@ MonoBehaviour:
   thisButton: {fileID: 1764226535}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &887411274
 Animator:
   serializedVersion: 3
@@ -18164,6 +18178,8 @@ MonoBehaviour:
   thisButton: {fileID: 1790766282}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &1166970298
 Animator:
   serializedVersion: 3
@@ -19440,6 +19456,8 @@ MonoBehaviour:
   thisButton: {fileID: 1236512166}
   VideoParent: {fileID: 1787903964}
   LessonParent: {fileID: 1414433576}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!114 &1236512169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20140,6 +20158,8 @@ MonoBehaviour:
   thisButton: {fileID: 512475508}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &1285913007
 Animator:
   serializedVersion: 3
@@ -23816,6 +23836,8 @@ MonoBehaviour:
   thisButton: {fileID: 1478112267}
   VideoParent: {fileID: 1607743947}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!114 &1478112271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24821,6 +24843,8 @@ MonoBehaviour:
   thisButton: {fileID: 2113030449}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &1535221879
 Animator:
   serializedVersion: 3
@@ -25937,6 +25961,8 @@ MonoBehaviour:
   thisButton: {fileID: 286631781}
   VideoParent: {fileID: 697387240}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &1595064376
 Animator:
   serializedVersion: 3
@@ -28337,6 +28363,8 @@ MonoBehaviour:
   thisButton: {fileID: 1145562063}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &1705821355
 Animator:
   serializedVersion: 3
@@ -30256,6 +30284,8 @@ MonoBehaviour:
   thisButton: {fileID: 1263457092}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
+  lessonPairPrefabs: []
 --- !u!95 &1832399166
 Animator:
   serializedVersion: 3
@@ -34179,6 +34209,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lessons: []
+  lessonPairPrefabs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   lessonNum: 0
 --- !u!4 &2105734645
 Transform:

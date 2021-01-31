@@ -16,7 +16,7 @@ public class WatchLessonButton : MonoBehaviour
 
     void Update(){
         if(PinWheel.transform.childCount > 0){
-            LessonParent = PinWheel.GetComponent<PinWheel>().wheelObjects[PinWheel.GetComponent<PinWheel>().frontObject].GetComponent<WatchLessonScript>().LessonParent;
+            LessonParent = PinWheel.GetComponent<PinWheel>().GetCurrentLessonParent();
         }
     }
 

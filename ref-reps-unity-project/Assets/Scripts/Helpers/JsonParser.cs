@@ -8,6 +8,7 @@ public class JsonParser
 
     public List<(String name, JToken lessonPairs)> GetLessonPacks(String json)
     {
+        //instead of JToken possibly return scriptable object
         JObject lessonPacks = JObject.Parse(json);
 
         List<(String, JToken)> LessonPacks = new List<(String, JToken)>();
