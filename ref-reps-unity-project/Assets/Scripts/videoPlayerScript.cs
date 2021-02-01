@@ -20,16 +20,18 @@ public class videoPlayerScript : MonoBehaviour
     public GameObject ModuleCompletePanel;
     public LessonModuleController LessonModuleController;
 
+    private LessonPairData lessonPairData;
+
     // Start is called before the first frame update
     void Start()
     {
         LessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
-        LessonPairData lessonPairData = LessonModuleController.GetCurrentLessonPair();
+        lessonPairData = LessonModuleController.GetCurrentLessonPair();
         LessonObject = GameObject.FindWithTag("Lesson").GetComponent<LessonConstructorScript>();
         vPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
         //playClip = LessonObject.playVideo;
         vPlayer.url = lessonPairData.playVideoUrl;
-        vPlayer.clip = playClip;
+        //vPlayer.clip = playClip;
         vPlayer.Play();
         MakeTheCallAnim = MakeTheCallUI.GetComponent<Animator>();
         isPaused = false;
@@ -38,6 +40,8 @@ public class videoPlayerScript : MonoBehaviour
         EndLessonAnim = GameObject.Find("EndLessonButton").GetComponent<Animator>();
         TransitionPanel = GameObject.Find("TransitionScreenPanel");
         TransitionPanel.SetActive(false);
+        
+        vPlayer.loopPointReached += EndReached;
     }
 
 
@@ -74,6 +78,30 @@ public class videoPlayerScript : MonoBehaviour
                 callMade = true;
             }
         }
+    }
+    
+    void EndReached(UnityEngine.Video.VideoPlayer videoPlayer)
+    {
+        if(vPlayer.url == lessonPairData.playVideoUrl){
+            vPlayer.Pause();
+            MakeTheCall();
+            isPaused = true;
+            callMade = true;
+        }
+        
+        if(vPlayer.url == lessonPairData.analysisVideoUrl){
+            Debug.Log("VideoDone");
+            vPlayer.Pause();
+            if(LessonModuleController.lessonNum < LessonModuleController.lessons.Count - 1){
+                TransitionPanel.SetActive(true);
+                TransitionPanel.transform.parent.gameObject.SetActive(true);
+            }
+            if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
+                TransitionPanel.transform.parent.gameObject.SetActive(true);
+                ModuleCompletePanel.SetActive(true);
+            }
+        }
+        
     }
 
     public void ReplayClip(){

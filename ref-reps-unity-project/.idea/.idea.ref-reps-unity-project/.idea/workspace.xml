@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIScripts/SeeAnalysisScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIScripts/SeeAnalysisScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,10 +48,8 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VideoSelectExitButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" />
@@ -60,6 +59,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIScripts/SeeAnalysisScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
     </changedPaths>
   </component>
@@ -131,7 +133,7 @@
       <workItem from="1611800156273" duration="10666000" />
       <workItem from="1611850322857" duration="102000" />
       <workItem from="1611865538077" duration="5385000" />
-      <workItem from="1611972044444" duration="24111000" />
+      <workItem from="1611972044444" duration="30120000" />
     </task>
     <servers />
   </component>
