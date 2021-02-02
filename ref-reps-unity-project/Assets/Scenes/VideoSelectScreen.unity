@@ -2168,7 +2168,6 @@ MonoBehaviour:
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!95 &172026639
 Animator:
   serializedVersion: 3
@@ -5364,7 +5363,6 @@ MonoBehaviour:
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!95 &436526268
 Animator:
   serializedVersion: 3
@@ -6555,7 +6553,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -498.16617, y: -0.000030517578}
+  m_AnchoredPosition: {x: -621.8419, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614224100
@@ -6926,7 +6924,6 @@ MonoBehaviour:
   VideoParent: {fileID: 1787903964}
   LessonParent: {fileID: 1414433576}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!114 &643668055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11838,7 +11835,6 @@ MonoBehaviour:
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!95 &1166970298
 Animator:
   serializedVersion: 3
@@ -12846,7 +12842,6 @@ MonoBehaviour:
   VideoParent: {fileID: 1787903964}
   LessonParent: {fileID: 1414433576}
   PinWheelButton: {fileID: 0}
-  lessonPairPrefabs: []
 --- !u!114 &1236512169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14360,8 +14355,8 @@ GameObject:
   - component: {fileID: 1366734115}
   - component: {fileID: 1366734114}
   - component: {fileID: 1366734113}
-  - component: {fileID: 1366734112}
   - component: {fileID: 1366734111}
+  - component: {fileID: 1366734118}
   m_Layer: 5
   m_Name: WatchLessonButton
   m_TagString: Untagged
@@ -14414,20 +14409,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1366734112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366734109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9619b668408fe164f8c6557a438528c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LessonModuleController: {fileID: 0}
-  LessonParent: {fileID: 0}
 --- !u!114 &1366734113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14557,6 +14538,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366734109}
   m_CullTransparentMesh: 0
+--- !u!114 &1366734118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366734109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f27a8b098502786459f406792660a224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LessonModuleController: {fileID: 0}
+  LessonParent: {fileID: 0}
 --- !u!1001 &1385588937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14946,7 +14941,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: -0.000030517578}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
   m_SizeDelta: {x: 603.8, y: 174}
   m_Pivot: {x: 1, y: 0.49999994}
 --- !u!114 &1418023175
@@ -19900,7 +19895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301.90012, y: 0.4000473}
+  m_AnchoredPosition: {x: -301.90018, y: 0.40001678}
   m_SizeDelta: {x: 603.8, y: 174}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1874244860
@@ -22637,10 +22632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lessons: []
-  lessonPairPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  lessonPairDataList: []
   lessonNum: 0
 --- !u!4 &2105734645
 Transform:

@@ -26,7 +26,7 @@ public class GameControllerScript : MonoBehaviour
         LessonObject = GameObject.FindWithTag("Lesson").GetComponent<LessonConstructorScript>();
         Application.targetFrameRate = 300;
         callsPanel = GameObject.Find("CallsPanel");
-        ConstructLesson();
+        AddCallOptions();
 
         if(LessonModuleController.lessonNum >= LessonObject.calls.Length){
             NextLessonTab.SetActive(false);
@@ -46,7 +46,7 @@ public class GameControllerScript : MonoBehaviour
         LessonModuleController.lessonNum++;
     }
 
-    void ConstructLesson(){
+    void AddCallOptions(){
         foreach(Transform child in callsPanel.transform){
             if(child.name == LessonObject.calls[0] + "Icon" || child.name == LessonObject.calls[1] + "Icon" || child.name == LessonObject.calls[2] + "Icon"){
                 if(child.CompareTag(LessonObject.sport)){

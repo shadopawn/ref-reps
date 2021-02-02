@@ -55,6 +55,20 @@ public class Database
         });
         return videoURL;
     }
+
+    public async Task<String> GetIconURL(String fileName)
+    {
+        Firebase.Storage.FirebaseStorage storage = Firebase.Storage.FirebaseStorage.DefaultInstance;
+        Firebase.Storage.StorageReference reference = storage.GetReference("basketball_signals/"+fileName);
+
+        String iconURL = "";
+        await reference.GetDownloadUrlAsync().ContinueWith((Task<Uri> task) => {
+            if (!task.IsFaulted && !task.IsCanceled) {
+                iconURL = task.Result.ToString();
+            }
+        });
+        return iconURL;
+    }
     
     public async Task<String> GetLessonPacksJson()
     {

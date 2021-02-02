@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CursorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CallImageDownloader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_PackageUtilities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,14 +58,17 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PinWheel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CursorNode.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIScripts/SeeAnalysisScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CallImageDownloader.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -135,7 +141,8 @@
       <workItem from="1611865538077" duration="5385000" />
       <workItem from="1611972044444" duration="31365000" />
       <workItem from="1612227859456" duration="302000" />
-      <workItem from="1612228252379" duration="352000" />
+      <workItem from="1612228252379" duration="4416000" />
+      <workItem from="1612303177419" duration="2299000" />
     </task>
     <servers />
   </component>

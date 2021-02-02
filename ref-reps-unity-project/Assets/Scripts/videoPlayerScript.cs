@@ -44,42 +44,6 @@ public class videoPlayerScript : MonoBehaviour
         vPlayer.loopPointReached += EndReached;
     }
 
-
-    void FixedUpdate()
-    {
-
-        if(vPlayer.isPrepared){
-            if(vPlayer.clip == LessonObject.analysisVideo){
-                if(vPlayer.time >= LessonObject.analysisEndTime){
-                        Debug.Log("VideoDone");
-                        vPlayer.Pause();
-                        if(LessonModuleController.lessonNum < LessonModuleController.lessons.Count - 1){
-                            TransitionPanel.SetActive(true);
-                            TransitionPanel.transform.parent.gameObject.SetActive(true);
-                        }
-                        if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
-                            TransitionPanel.transform.parent.gameObject.SetActive(true);
-                            ModuleCompletePanel.SetActive(true);
-                        }
-                    }
-                    else{
-                        TransitionPanel.SetActive(false);
-                        ModuleCompletePanel.SetActive(false);
-                }
-            }
-        }
-        
-
-        if(vPlayer.clip == LessonObject.playVideo){
-            if(vPlayer.time >= LessonObject.calltime || vPlayer.time >= vPlayer.clip.length){
-                vPlayer.Pause();
-                MakeTheCall();
-                isPaused = true;
-                callMade = true;
-            }
-        }
-    }
-    
     void EndReached(UnityEngine.Video.VideoPlayer videoPlayer)
     {
         if(vPlayer.url == lessonPairData.playVideoUrl){

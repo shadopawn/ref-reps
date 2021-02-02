@@ -136,6 +136,7 @@
         <e p="Scripts" t="Include">
           <e p="baseballPointScript.cs" t="Include" />
           <e p="BodySourceViewTitle.cs" t="Include" />
+          <e p="CallImageDownloader.cs" t="Include" />
           <e p="CallMake.cs" t="Include" />
           <e p="ColorSourceManagerTitle.cs" t="Include" />
           <e p="ColorSourceViewTitle.cs" t="Include" />
