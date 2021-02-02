@@ -26,14 +26,13 @@ public class LessonPackButtonList : MonoBehaviour
         }
     }
 
-    private async Task CreateNewButton(String buttonText, JToken lessonPairs)
+    private void CreateNewButton(String buttonText, JToken lessonPairs)
     {
         GameObject lessonPackButton = Instantiate(lessonPackButtonPrefab, transform);
         Text buttonTextComponent = lessonPackButton.GetComponentInChildren<Text>();
         buttonTextComponent.text = buttonText;
         
-        //set lessonPairPrefabs on LessonSelectScript attached to LessonPackButton 
-        List<LessonPairData> lessonPairObjects = await _jsonParser.CreateLessonPairs(lessonPairs);
+        List<LessonPairData> lessonPairObjects = _jsonParser.CreateLessonPairs(lessonPairs);
         lessonPackButton.GetComponent<LessonSelectScript>().SetLessonPairDataList(lessonPairObjects);
         
     }

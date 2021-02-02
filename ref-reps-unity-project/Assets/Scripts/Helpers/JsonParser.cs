@@ -27,7 +27,7 @@ public class JsonParser
         return lessonPackList;
     }
     
-    public async Task<List<LessonPairData>> CreateLessonPairs(JToken lessonPairs)
+    public List<LessonPairData> CreateLessonPairs(JToken lessonPairs)
     {
         List<LessonPairData> lessonPairDataList = new List<LessonPairData>();
 
@@ -36,10 +36,8 @@ public class JsonParser
             LessonPairData lessonPairData = ScriptableObject.CreateInstance<LessonPairData>();
             foreach (JToken lessonPairChild in lessonPair.Children())
             {
-                String callVideoFileName = lessonPairChild.Value<String>("call_video");
-                String analysisVideoFileName = lessonPairChild.Value<String>("analysis_video");
-                String callVideoURL = await _database.GetVideoURL(callVideoFileName);
-                String analysisVideoURL = await _database.GetVideoURL(analysisVideoFileName);
+                String callVideoURL = lessonPairChild.Value<String>("call_url");
+                String analysisVideoURL = lessonPairChild.Value<String>("analysis_url");
 
                 lessonPairData.playVideoUrl = callVideoURL;
                 lessonPairData.analysisVideoUrl = analysisVideoURL;
