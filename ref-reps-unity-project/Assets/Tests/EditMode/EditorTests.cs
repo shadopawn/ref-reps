@@ -14,6 +14,7 @@ namespace Tests
 
         private Database _database;
         
+        
         [SetUp]
         public void Setup()
         {
@@ -49,19 +50,19 @@ namespace Tests
         }
         
         [UnityTest]
-        public async Task TestFailToGetVideoURL()
+        public async Task TestDatabaseFailToGetVideoURL()
         {
             var testValue = await _database.GetVideoURL("nonExistent.mp4");
             Assert.AreEqual(testValue, "");
         }
-        
+
         [UnityTest]
-        public async Task TestGetLessonPacksJson()
+        public async Task TestDatabaseGetLessonPacksJson()
         {
             var json = await _database.GetLessonPacksJson();
             Assert.NotNull(json);
         }
-        
+
         [Test]
         public void TestAwait()
         {

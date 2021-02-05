@@ -1,0 +1,16 @@
+{
+    "name": "JsonParser",
+    "references": [
+        "GUID:b5c54ec97998fb9478ae878253bbda39",
+        "GUID:ef11628fdedfecc418fcc4c45b323fc9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
