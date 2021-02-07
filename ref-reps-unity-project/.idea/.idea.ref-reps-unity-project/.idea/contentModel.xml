@@ -164,6 +164,7 @@
           <e p="IconInteractScript.cs" t="Include" />
           <e p="KinectVideoScript.cs" t="Include" />
           <e p="KinectVideoScriptTitle.cs" t="Include" />
+          <e p="LessonbarIncrementer.cs" t="Include" />
           <e p="LessonConstructorScript.cs" t="Include" />
           <e p="LessonData.cs" t="Include" />
           <e p="LessonModuleController.cs" t="Include" />

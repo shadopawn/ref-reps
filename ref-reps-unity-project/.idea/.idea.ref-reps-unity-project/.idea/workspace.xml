@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IconInteractScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IconInteractScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +75,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/IconInteractScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/JsonParserTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -151,6 +150,7 @@
       <workItem from="1612227859456" duration="302000" />
       <workItem from="1612228252379" duration="4416000" />
       <workItem from="1612303177419" duration="4705000" />
+      <workItem from="1612651161223" duration="809000" />
     </task>
     <servers />
   </component>
