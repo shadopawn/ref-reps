@@ -5,7 +5,7 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Button))]
 public class LessonbarIncrementer : MonoBehaviour
 {
-    private float value = 80.0F;
+    private float value = 174.0F;
 
     GameObject GetButtonRect()
     {
