@@ -49,6 +49,27 @@ namespace Tests
             var testValue = await _database.GetVideoURL("nonExistent.mp4");
             Assert.AreEqual(testValue, "");
         }
+        
+        [UnityTest]
+        public async Task TestGetIconURL()
+        {
+            var testValue = await _database.GetIconURL("push.png");
+            Assert.NotNull(testValue);
+        }
+        
+        [UnityTest]
+        public async Task TestGetIconURL2()
+        {
+            var testValue = await _database.GetIconURL("DoubleFoul.png");
+            Assert.NotNull(testValue);
+        }
+        
+        [UnityTest]
+        public async Task TestDatabaseFailToGetIconURL()
+        {
+            var testValue = await _database.GetIconURL("nonExistent.png");
+            Assert.AreEqual(testValue, "");
+        }
 
         [UnityTest]
         public async Task TestDatabaseGetLessonPacksJson()
