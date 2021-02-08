@@ -11,8 +11,8 @@ public class NextLessonScript : MonoBehaviour
     void Start(){
         LessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
         GameController = GameObject.Find("GameController").GetComponent<GameControllerScript>();
-
-        if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
+        
+        if(LessonModuleController.lessonNum >= LessonModuleController.lessonPairDataList.Count - 1){
             this.gameObject.SetActive(false);
         }
     }

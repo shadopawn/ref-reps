@@ -20,15 +20,18 @@ public class videoPlayerScript : MonoBehaviour
     public GameObject ModuleCompletePanel;
     public LessonModuleController LessonModuleController;
 
+    private LessonPairData lessonPairData;
+
     // Start is called before the first frame update
     void Start()
     {
         LessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
+        lessonPairData = LessonModuleController.GetCurrentLessonPair();
         LessonObject = GameObject.FindWithTag("Lesson").GetComponent<LessonConstructorScript>();
         vPlayer = GetComponent<UnityEngine.Video.VideoPlayer>();
-        playClip = LessonObject.playVideo;
-        // vPlayer.url = LessonObject.url;
-        vPlayer.clip = playClip;
+        //playClip = LessonObject.playVideo;
+        vPlayer.url = lessonPairData.playVideoUrl;
+        //vPlayer.clip = playClip;
         vPlayer.Play();
         MakeTheCallAnim = MakeTheCallUI.GetComponent<Animator>();
         isPaused = false;
@@ -37,42 +40,32 @@ public class videoPlayerScript : MonoBehaviour
         EndLessonAnim = GameObject.Find("EndLessonButton").GetComponent<Animator>();
         TransitionPanel = GameObject.Find("TransitionScreenPanel");
         TransitionPanel.SetActive(false);
+        
+        vPlayer.loopPointReached += EndReached;
     }
 
-
-    void FixedUpdate()
+    void EndReached(UnityEngine.Video.VideoPlayer videoPlayer)
     {
-
-        if(vPlayer.isPrepared){
-            if(vPlayer.clip == LessonObject.analysisVideo){
-                if(vPlayer.time >= LessonObject.analysisEndTime){
-                        Debug.Log("VideoDone");
-                        vPlayer.Pause();
-                        if(LessonModuleController.lessonNum < LessonModuleController.lessons.Count - 1){
-                            TransitionPanel.SetActive(true);
-                            TransitionPanel.transform.parent.gameObject.SetActive(true);
-                        }
-                        if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
-                            TransitionPanel.transform.parent.gameObject.SetActive(true);
-                            ModuleCompletePanel.SetActive(true);
-                        }
-                    }
-                    else{
-                        TransitionPanel.SetActive(false);
-                        ModuleCompletePanel.SetActive(false);
-                }
+        if(vPlayer.url == lessonPairData.playVideoUrl){
+            vPlayer.Pause();
+            MakeTheCall();
+            isPaused = true;
+            callMade = true;
+        }
+        
+        if(vPlayer.url == lessonPairData.analysisVideoUrl){
+            Debug.Log("VideoDone");
+            vPlayer.Pause();
+            if(LessonModuleController.lessonNum < LessonModuleController.lessons.Count - 1){
+                TransitionPanel.SetActive(true);
+                TransitionPanel.transform.parent.gameObject.SetActive(true);
+            }
+            if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
+                TransitionPanel.transform.parent.gameObject.SetActive(true);
+                ModuleCompletePanel.SetActive(true);
             }
         }
         
-
-        if(vPlayer.clip == LessonObject.playVideo){
-            if(vPlayer.time >= LessonObject.calltime || vPlayer.time >= vPlayer.clip.length){
-                vPlayer.Pause();
-                MakeTheCall();
-                isPaused = true;
-                callMade = true;
-            }
-        }
     }
 
     public void ReplayClip(){
@@ -91,7 +84,7 @@ public class videoPlayerScript : MonoBehaviour
             SeeAnalysisAnim.SetBool("isActive", true);
             NextLessonAnim.SetBool("isActive",true);
             EndLessonAnim.SetBool("isActive", true);
-            if(callName == LessonObject.correctCall){
+            if(callName == lessonPairData.correctCall){
                 callUIObject.transform.Find("Correct").gameObject.SetActive(true);
             }else{
                 callUIObject.transform.Find("Incorrect").gameObject.SetActive(true);

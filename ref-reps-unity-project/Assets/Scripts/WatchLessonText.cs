@@ -16,7 +16,7 @@ public class WatchLessonText : MonoBehaviour
     void Update()
     {
         if(PinWheel.transform.childCount > 0){
-            GetComponent<Text>().text = "Watch " + PinWheel.GetComponent<PinWheel>().wheelObjects[PinWheel.GetComponent<PinWheel>().frontObject].transform.Find("Text").GetComponent<Text>().text;
+            GetComponent<Text>().text = "Watch " + PinWheel.GetComponent<PinWheel>().getCurrentButtonText();
         }
     }
 }

@@ -1,16 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameControllerScript : MonoBehaviour
 {
-    LessonModuleController LessonModuleController;
-    LessonConstructorScript LessonObject;
-    GameObject callIcon;
-    GameObject callsPanel;
+    private LessonModuleController LessonModuleController;
+    private LessonPairData _lessonPairData;
+    private LessonConstructorScript LessonObject;
+    public GameObject callIcon;
+    
+    private GameObject callsPanel;
 
-    GameObject NextLessonTab;
-    GameObject NextLessonButton;
+    private GameObject NextLessonTab;
+    private GameObject NextLessonButton;
     
     void Awake(){
         LessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
@@ -23,10 +26,12 @@ public class GameControllerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _lessonPairData = LessonModuleController.GetCurrentLessonPair();
+        
         LessonObject = GameObject.FindWithTag("Lesson").GetComponent<LessonConstructorScript>();
         Application.targetFrameRate = 300;
         callsPanel = GameObject.Find("CallsPanel");
-        ConstructLesson();
+        AddCallOptions();
 
         if(LessonModuleController.lessonNum >= LessonObject.calls.Length){
             NextLessonTab.SetActive(false);
@@ -46,7 +51,13 @@ public class GameControllerScript : MonoBehaviour
         LessonModuleController.lessonNum++;
     }
 
-    void ConstructLesson(){
+    void AddCallOptions(){
+        foreach (String call in _lessonPairData.calls)
+        {
+            creatCallOption(call);
+        }
+        
+        /*
         foreach(Transform child in callsPanel.transform){
             if(child.name == LessonObject.calls[0] + "Icon" || child.name == LessonObject.calls[1] + "Icon" || child.name == LessonObject.calls[2] + "Icon"){
                 if(child.CompareTag(LessonObject.sport)){
@@ -54,11 +65,19 @@ public class GameControllerScript : MonoBehaviour
                 }
             }
         }
+        */
 
         GameObject[] callNodes = GameObject.FindGameObjectsWithTag("callNode");
         foreach(GameObject callNode in callNodes){
             baseballPointScript pScript = callNode.GetComponent<baseballPointScript>();
             pScript.DetermineActive();
         }
+    }
+
+    private void creatCallOption(String callName)
+    {
+        GameObject newCallIcon = Instantiate(callIcon, callsPanel.transform);
+        newCallIcon.name = callName;
+        newCallIcon.GetComponent<CallImageDownloader>().SetImage(callName);
     }
 }

@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\mlitt\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\mlitt\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ref-reps-unity-project.548882066.00" t="ExcludeRecursive" />
+    <e p="C:\Users\mlitt\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\mlitt\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_ref-reps-unity-project.548882066.00" t="ExcludeRecursive" />
     <e p="C:\Users\mlitt\Documents\Daniel_Litt\ref-reps\ref-reps-unity-project" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Firebase" t="Include">
+          <e p="Editor" t="Include">
+            <e p="DatabaseDependencies.xml" t="Include" />
+            <e p="FirebaseDatabase_version-6.16.1_manifest.txt" t="Include" />
+          </e>
+          <e p="m2repository" t="Include">
+            <e p="com" t="Include">
+              <e p="google" t="Include">
+                <e p="Firebase" t="Include">
+                  <e p="firebase-database-unity" t="Include">
+                    <e p="maven-metadata.xml" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="KinectView" t="Include">
           <e p="Scripts" t="Include">
             <e p="BodySourceManager.cs" t="Include" />
@@ -119,9 +136,11 @@
         <e p="Scripts" t="Include">
           <e p="baseballPointScript.cs" t="Include" />
           <e p="BodySourceViewTitle.cs" t="Include" />
+          <e p="CallImageDownloader.cs" t="Include" />
           <e p="CallMake.cs" t="Include" />
           <e p="ColorSourceManagerTitle.cs" t="Include" />
           <e p="ColorSourceViewTitle.cs" t="Include" />
+          <e p="CursorNode.cs" t="Include" />
           <e p="CursorStart.cs" t="Include" />
           <e p="Database" t="Include">
             <e p="Database.cs" t="Include" />
@@ -139,12 +158,17 @@
           <e p="GameStore.cs" t="Include" />
           <e p="HalfSpeedScript.cs" t="Include" />
           <e p="handScript.cs" t="Include" />
+          <e p="Helpers" t="Include">
+            <e p="JsonParser.cs" t="Include" />
+          </e>
           <e p="IconInteractScript.cs" t="Include" />
           <e p="KinectVideoScript.cs" t="Include" />
           <e p="KinectVideoScriptTitle.cs" t="Include" />
+          <e p="LessonbarIncrementer.cs" t="Include" />
           <e p="LessonConstructorScript.cs" t="Include" />
           <e p="LessonData.cs" t="Include" />
           <e p="LessonModuleController.cs" t="Include" />
+          <e p="LessonPackButtonList.cs" t="Include" />
           <e p="LessonSelectScript.cs" t="Include" />
           <e p="MidPanelScript.cs" t="Include" />
           <e p="NextLessonScript.cs" t="Include" />
@@ -162,6 +186,9 @@
           <e p="SameRect.cs" t="Include" />
           <e p="SameText.cs" t="Include" />
           <e p="SaveScript.cs" t="Include" />
+          <e p="ScriptableObjects" t="Include">
+            <e p="LessonPairData.cs" t="Include" />
+          </e>
           <e p="ScrollDown.cs" t="Include" />
           <e p="ScrollUp.cs" t="Include" />
           <e p="slideBar.cs" t="Include" />
@@ -182,6 +209,7 @@
             <e p="UIBarScript.cs" t="Include" />
             <e p="UIScriptManager.cs" t="Include" />
           </e>
+          <e p="VideoButtonList.cs" t="Include" />
           <e p="videoPlayerScript.cs" t="Include" />
           <e p="VideoSelectExitButton.cs" t="Include" />
           <e p="ViewLessonAgainScript.cs" t="Include" />
@@ -291,15 +319,19 @@
         </e>
         <e p="Tests" t="Include">
           <e p="EditMode" t="Include">
-            <e p="EditorTests.cs" t="Include" />
+            <e p="DatabaseTests.cs" t="Include" />
+            <e p="JsonParserTests.cs" t="Include" />
+            <e p="LessonPairDataTests.cs" t="Include" />
           </e>
           <e p="PlayMode" t="Include">
-            <e p="PlayModeTests.cs" t="Include" />
+            <e p="DownloadVideoTests.cs" t="Include" />
           </e>
         </e>
       </e>
       <e p="Database.csproj" t="IncludeRecursive" />
       <e p="EditMode.csproj" t="IncludeRecursive" />
+      <e p="JsonParser.csproj" t="IncludeRecursive" />
+      <e p="LessonPairData.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="PlayMode.csproj" t="IncludeRecursive" />

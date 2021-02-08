@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,7 @@ public class SeeAnalysisScript : MonoBehaviour
 {
     public UnityEngine.Video.VideoPlayer videoPlayer;
     public UnityEngine.Video.VideoClip analysisClip;
+    public String analysisClipUrl;
     public LessonConstructorScript LessonObject;
     public GameObject cursorProgress;
 
@@ -20,7 +22,11 @@ public class SeeAnalysisScript : MonoBehaviour
     {
         LessonObject = GameObject.FindWithTag("Lesson").GetComponent<LessonConstructorScript>();
         videoPlayer = GameObject.Find("VideoPlayer/CurrentVideo").GetComponent<UnityEngine.Video.VideoPlayer>();
-        analysisClip = LessonObject.analysisVideo;
+        
+        LessonModuleController lessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
+        LessonPairData lessonPairData = lessonModuleController.GetCurrentLessonPair();
+        
+        analysisClipUrl = lessonPairData.analysisVideoUrl;
     }
 
     // Update is called once per frame
@@ -45,7 +51,7 @@ public class SeeAnalysisScript : MonoBehaviour
     }
 
     public void SeeAnalysis(){
-        videoPlayer.clip = analysisClip;
+        videoPlayer.url = analysisClipUrl;
         videoPlayer.Play();
         this.gameObject.SetActive(false);
         GameObject.Find("CallsCanvas").SetActive(false);

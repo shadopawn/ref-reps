@@ -20,7 +20,7 @@ public class VideoSelectExitButton : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(virtualCursor.transform.position, this.gameObject.transform.position);
-        Debug.Log(dist);
+        //Debug.Log(dist);
         if(dist > .5f){
             spriteRen.color = new Color(1,1,1, 1 - (dist * .0055f));
         }else{

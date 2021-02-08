@@ -12470,6 +12470,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b7441cc81724949a44f62de7a76b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  callIcon: {fileID: 2406168613710412447, guid: 7a353f0c0660dd040b7e9d4a79bf37f1,
+    type: 3}
 --- !u!4 &679773818
 Transform:
   m_ObjectHideFlags: 0
@@ -15938,6 +15940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 39642902}
   analysisClip: {fileID: 32900000, guid: b79f2d447818b414e809c43fb3ccdfcf, type: 3}
+  analysisClipUrl: 
   LessonObject: {fileID: 0}
   cursorProgress: {fileID: 70508134}
 --- !u!61 &830699256

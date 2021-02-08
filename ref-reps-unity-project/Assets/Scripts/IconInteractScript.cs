@@ -15,7 +15,7 @@ public class IconInteractScript : MonoBehaviour
         charsToTrim = new char[]{'I','c','o','n'};
         vpScript = GameObject.Find("CurrentVideo").GetComponent<videoPlayerScript>();
         callUIObject = this.gameObject;
-        callName = this.gameObject.name.Remove(this.gameObject.name.Length - 4);
+        callName = this.gameObject.name;
     }
 
     // Update is called once per frame

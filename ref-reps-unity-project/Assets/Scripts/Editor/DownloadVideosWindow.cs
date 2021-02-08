@@ -16,7 +16,7 @@ public class DownloadVideosWindow : EditorWindow
         GetWindow<DownloadVideosWindow>();
     }
 
-    private void OnGUI()
+    private async void OnGUI()
     {
         _database = new Database();
         if (GUILayout.Button("Download"))
