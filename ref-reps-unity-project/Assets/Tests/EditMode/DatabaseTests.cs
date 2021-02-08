@@ -9,7 +9,7 @@ using UnityEngine.TestTools;
 namespace Tests
 {
 
-    public class EditorTests
+    public class DatabaseTests
     {
 
         private Database _database;
@@ -21,12 +21,6 @@ namespace Tests
             _database = new Database();
         }
         
-        // A Test behaves as an ordinary method
-        [Test]
-        public void SampleTest()
-        {
-            Assert.AreEqual(true, true);
-        }
         
         [UnityTest]
         public async Task RetrieveData()
@@ -62,22 +56,6 @@ namespace Tests
             var json = await _database.GetLessonPacksJson();
             Assert.NotNull(json);
         }
-
-        [Test]
-        public void TestAwait()
-        {
-            var task = Task.Run(async () =>
-            {
-                return await GetTestTaskAsync();
-            });
- 
-            Assert.AreEqual(1, task.Result);
-        }
- 
-        public async Task<int> GetTestTaskAsync()
-        {
-            await Task.Delay(TimeSpan.FromMilliseconds(200));
-            return 1;
-        }
+        
     }
 }

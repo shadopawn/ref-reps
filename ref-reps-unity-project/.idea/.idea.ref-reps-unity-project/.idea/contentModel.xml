@@ -320,14 +320,17 @@
         <e p="Tests" t="Include">
           <e p="EditMode" t="Include">
             <e p="EditorTests.cs" t="Include" />
+            <e p="JsonParserTests.cs" t="Include" />
           </e>
           <e p="PlayMode" t="Include">
-            <e p="PlayModeTests.cs" t="Include" />
+            <e p="DownloadVideoTests.cs" t="Include" />
           </e>
         </e>
       </e>
       <e p="Database.csproj" t="IncludeRecursive" />
       <e p="EditMode.csproj" t="IncludeRecursive" />
+      <e p="JsonParser.csproj" t="IncludeRecursive" />
+      <e p="LessonPairData.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="PlayMode.csproj" t="IncludeRecursive" />

@@ -8,17 +8,8 @@ using UnityEngine.Windows;
 
 namespace Tests
 {
-    public class PlayModeTests
+    public class DownloadVideoTests
     {
-
-        // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
-        // `yield return null;` to skip a frame.
-        [UnityTest]
-        public IEnumerator SamplePlayModeTest()
-        {
-            yield return null;
-            Assert.AreEqual(true, true);
-        }
 
         [UnityTest]
         public IEnumerator DownloadVideoTest()
