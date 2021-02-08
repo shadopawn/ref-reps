@@ -22,9 +22,6 @@
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helpers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +49,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CallImageDownloader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Editor/TMP_PackageUtilities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/LessonPairDataTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/PlayMode/DownloadVideoTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VideoSelectExitButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonButton.cs" />
@@ -78,6 +75,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/IconInteractScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/JsonParserTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/EditorTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/PlayModeTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/DownloadVideoTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/DatabaseTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/LessonPairDataTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -154,7 +155,7 @@
       <workItem from="1612303177419" duration="4705000" />
       <workItem from="1612651161223" duration="809000" />
       <workItem from="1612726058412" duration="697000" />
-      <workItem from="1612815155248" duration="1231000" />
+      <workItem from="1612815155248" duration="4026000" />
     </task>
     <servers />
   </component>

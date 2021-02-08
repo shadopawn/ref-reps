@@ -319,8 +319,9 @@
         </e>
         <e p="Tests" t="Include">
           <e p="EditMode" t="Include">
-            <e p="EditorTests.cs" t="Include" />
+            <e p="DatabaseTests.cs" t="Include" />
             <e p="JsonParserTests.cs" t="Include" />
+            <e p="LessonPairDataTests.cs" t="Include" />
           </e>
           <e p="PlayMode" t="Include">
             <e p="DownloadVideoTests.cs" t="Include" />
