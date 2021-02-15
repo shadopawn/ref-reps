@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Tests/EditMode/DatabaseTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Tests/EditMode/DatabaseTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +63,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonConstructorScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIScripts/SeeAnalysisScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CallImageDownloader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
@@ -78,6 +76,9 @@
       <option value="$PROJECT_DIR$/Assets/Tests/PlayMode/DownloadVideoTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/LessonPairDataTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/DatabaseTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -154,7 +155,9 @@
       <workItem from="1612303177419" duration="4705000" />
       <workItem from="1612651161223" duration="809000" />
       <workItem from="1612726058412" duration="697000" />
-      <workItem from="1612815155248" duration="4355000" />
+      <workItem from="1612815155248" duration="7862000" />
+      <workItem from="1612903091612" duration="2143000" />
+      <workItem from="1613422570563" duration="1684000" />
     </task>
     <servers />
   </component>

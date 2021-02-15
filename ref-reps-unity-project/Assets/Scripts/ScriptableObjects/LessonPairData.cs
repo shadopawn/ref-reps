@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class LessonPairData : ScriptableObject
 {
-    public string playVideoUrl;
-    public string analysisVideoUrl;
-    public string sport;
+    public String lessonPairName;
+    public String playVideoUrl;
+    public String analysisVideoUrl;
+    public String sport;
     public List<String> calls = new List<string>();
-    public string correctCall;
+    public String correctCall;
 }
