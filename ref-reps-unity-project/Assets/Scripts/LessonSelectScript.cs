@@ -64,14 +64,11 @@ public class LessonSelectScript : MonoBehaviour
         
         GameObject pinButton = Instantiate(PinWheelButton, transform.position, Quaternion.identity, PinWheelCompoonenet.transform);
         Text buttonText = pinButton.GetComponentInChildren<Text>();
-        if (!string.IsNullOrEmpty(lessonPairData.lessonPairName))
+        if (string.IsNullOrEmpty(lessonPairData.lessonPairName))
         {
-            buttonText.text = lessonPairData.lessonPairName;
+            lessonPairData.lessonPairName = "Video " + (index + 1);
         }
-        else
-        {
-            buttonText.text = "Video " + index;
-        }
+        buttonText.text = lessonPairData.lessonPairName;
         
         pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
         
