@@ -60,10 +60,21 @@ public class LessonSelectScript : MonoBehaviour
 
     private GameObject CreatPinWheelButton(int index)
     {
+        LessonPairData lessonPairData = _lessonPairDataList[index];
+        
         GameObject pinButton = Instantiate(PinWheelButton, transform.position, Quaternion.identity, PinWheelCompoonenet.transform);
-        pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
         Text buttonText = pinButton.GetComponentInChildren<Text>();
-        buttonText.text = "Video " + index;
+        if (!string.IsNullOrEmpty(lessonPairData.lessonPairName))
+        {
+            buttonText.text = lessonPairData.lessonPairName;
+        }
+        else
+        {
+            buttonText.text = "Video " + index;
+        }
+        
+        pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
+        
         return pinButton;
     }
 }
