@@ -42,11 +42,13 @@ public class SaveData
 
         if (_saveDataJObject[lessonPackName]?[lessonPairName] is JObject lessonPackJObject)
         {
+            //if pack and pair already exist set to complete
             lessonPackJObject["completed"] = true;
         }
 
         if (_saveDataJObject[lessonPackName] == null)
         {
+            //if pack does not exist create new pack entry with completed lesson pair
             _saveDataJObject[lessonPackName] = new JObject
             {
                 {
@@ -60,6 +62,7 @@ public class SaveData
         }
         else
         {
+            //if pack does exist overwrite or create new lesson pair and set to complete
             _saveDataJObject[lessonPackName][lessonPairName] = new JObject
             {
                 {"completed", true}
@@ -67,5 +70,12 @@ public class SaveData
         }
         
         File.WriteAllText(_saveFile, _saveDataJObject.ToString());
+    }
+
+    public bool IsLessonPairComplete(string lessonPackName, string lessonPairName)
+    {
+        bool? isComplete = _saveDataJObject[lessonPackName]?[lessonPairName]?.Value<bool>("completed");
+
+        return isComplete ?? false;
     }
 }

@@ -16,7 +16,7 @@ namespace Tests
         private string _saveDirectory;
         private string _saveFile;
         
-        private String _customFilePath = Application.dataPath + "/SaveData/testSave.json";
+        private String _customFilePath = Application.dataPath + "/SaveData/testSaveData.json";
 
         [SetUp]
         public void Setup()
@@ -120,6 +120,23 @@ namespace Tests
             JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expecteText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
+        
+        [Test]
+        public void TestIsLessonPairCompleteFalse()
+        {
+            SaveData saveData = new SaveData(_customFilePath);
+            bool isComplete = saveData.IsLessonPairComplete("test", "test");
+            Assert.False(isComplete);
+        }
+        
+        [Test]
+        public void TestIsLessonPairCompleteTrue()
+        {
+            SaveData saveData = new SaveData(_customFilePath);
+            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            bool isComplete = saveData.IsLessonPairComplete("Lesson Pack 1", "Video 1");
+            Assert.True(isComplete);
         }
 
         [TearDown]

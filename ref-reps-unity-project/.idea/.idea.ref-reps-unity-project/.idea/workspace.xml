@@ -84,8 +84,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/SaveData/userInfo.json" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/SaveDataTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/SaveData.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -167,7 +167,7 @@
       <workItem from="1613422570563" duration="3278000" />
       <workItem from="1613514705544" duration="779000" />
       <workItem from="1613603040838" duration="4335000" />
-      <workItem from="1613616286338" duration="11855000" />
+      <workItem from="1613616286338" duration="17580000" />
     </task>
     <servers />
   </component>
