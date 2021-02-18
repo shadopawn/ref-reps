@@ -15,6 +15,8 @@ namespace Tests
         
         private string _saveDirectory;
         private string _saveFile;
+        
+        private String _customFilePath = Application.dataPath + "/SaveData/testSave.json";
 
         [SetUp]
         public void Setup()
@@ -38,12 +40,35 @@ namespace Tests
             bool fileExists = File.Exists(_saveFile);
             Assert.True(fileExists);
         }
+        
+        [Test]
+        public void TestCreateDirectoryCustomPath()
+        {
+            SaveData saveData = new SaveData(_customFilePath);
+            String directory = Path.GetDirectoryName(_customFilePath);
+            bool directoryExists = Directory.Exists(directory);
+            Assert.True(directoryExists);
+        }
+        
+        [Test]
+        public void TestCreateSaveFileCustomPath()
+        {
+            SaveData saveData = new SaveData(_customFilePath);
+            bool fileExists = File.Exists(_customFilePath);
+            Assert.True(fileExists);
+        }
 
         [Test]
         public void TestCompleteLessonPair()
         {
             _saveData.CompleteLessonPair("", "");
             Assert.True(true);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            File.Delete(_customFilePath);
         }
     }
 }

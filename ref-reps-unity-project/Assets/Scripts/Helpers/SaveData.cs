@@ -12,11 +12,16 @@ public class SaveData
 
     private JObject _saveDataJObject = new JObject();
     
-    public SaveData()
+    public SaveData(String filePath = "")
     {
         String saveDirectory = Application.dataPath + "/SaveData";
         _saveFile = saveDirectory + "/userInfo.json";
-        
+        if (filePath != "")
+        {
+            saveDirectory = Path.GetDirectoryName(filePath);
+            _saveFile = filePath;
+        }
+
         Directory.CreateDirectory(saveDirectory);
         if (!File.Exists(_saveFile))
         {
