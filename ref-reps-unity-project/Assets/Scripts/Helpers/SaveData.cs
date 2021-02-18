@@ -39,6 +39,33 @@ public class SaveData
     
     public void CompleteLessonPair(string lessonPackName, string lessonPairName)
     {
+
+        if (_saveDataJObject[lessonPackName]?[lessonPairName] is JObject lessonPackJObject)
+        {
+            lessonPackJObject["completed"] = true;
+        }
+
+        if (_saveDataJObject[lessonPackName] == null)
+        {
+            _saveDataJObject[lessonPackName] = new JObject
+            {
+                {
+                    lessonPairName,
+                    new JObject
+                    {
+                        { "completed", true }
+                    }
+                }
+            };
+        }
+        else
+        {
+            _saveDataJObject[lessonPackName][lessonPairName] = new JObject
+            {
+                {"completed", true}
+            };
+        }
+        
         File.WriteAllText(_saveFile, _saveDataJObject.ToString());
     }
 }

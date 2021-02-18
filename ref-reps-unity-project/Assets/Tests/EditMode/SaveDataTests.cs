@@ -61,8 +61,65 @@ namespace Tests
         [Test]
         public void TestCompleteLessonPair()
         {
-            _saveData.CompleteLessonPair("", "");
-            Assert.True(true);
+            SaveData saveData = new SaveData(_customFilePath);
+            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'completed': true 
+                    } 
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
+        
+        [Test]
+        public void TestCompleteLessonPairMultipleUnique()
+        {
+            SaveData saveData = new SaveData(_customFilePath);
+            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            saveData.CompleteLessonPair("Lesson Pack 2", "Video 2");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'completed': true 
+                    } 
+                },
+                'Lesson Pack 2': {
+                    'Video 2': {
+                        'completed': true
+                    }
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
+        
+        [Test]
+        public void TestCompleteLessonPairMultipleInPack()
+        {
+            SaveData saveData = new SaveData(_customFilePath);
+            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            saveData.CompleteLessonPair("Lesson Pack 1", "Video 2");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'completed': true 
+                    },
+                    'Video 2': { 
+                        'completed': true 
+                    },
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
         }
 
         [TearDown]
