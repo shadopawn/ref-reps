@@ -54,7 +54,7 @@ public class videoPlayerScript : MonoBehaviour
         }
         
         if(vPlayer.url == lessonPairData.analysisVideoUrl){
-            Debug.Log("VideoDone");
+            Debug.Log("Analysis Video Done");
             vPlayer.Pause();
             if(LessonModuleController.lessonNum < LessonModuleController.GetLessonPairCount() - 1){
                 TransitionPanel.SetActive(true);

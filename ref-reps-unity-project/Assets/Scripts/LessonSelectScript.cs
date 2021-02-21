@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -15,7 +16,8 @@ public class LessonSelectScript : MonoBehaviour
     public GameObject LessonParent;
 
     public GameObject PinWheelButton;
-    
+
+    private String _lessonPackName;
     private List<LessonPairData> _lessonPairDataList;
     
     private LessonModuleController _lessonModuleController;
@@ -30,6 +32,8 @@ public class LessonSelectScript : MonoBehaviour
         
         _lessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
 
+        _lessonPackName = GetComponentInChildren<Text>().text;
+
     }
 
     // Update is called once per frame
@@ -39,7 +43,7 @@ public class LessonSelectScript : MonoBehaviour
     }
 
     public void titleExecute(){
-        LessonTitle.GetComponent<Text>().text = GetComponentInChildren<Text>().text;
+        LessonTitle.GetComponent<Text>().text = _lessonPackName;
         
         PinWheelCompoonenet.DestroyChildren();
         for(int i = 0; i < _lessonPairDataList.Count(); i++)
@@ -51,13 +55,14 @@ public class LessonSelectScript : MonoBehaviour
         thisButton.GetComponent<Animator>().SetBool("isSelected", true);
         
         _lessonModuleController.SetLessonPairDataList(_lessonPairDataList);
+        _lessonModuleController.SetLessonPackName(_lessonPackName);
     }
     
     public void SetLessonPairDataList(List<LessonPairData> lessonPairData)
     {
         _lessonPairDataList = lessonPairData;
     }
-
+    
     private GameObject CreatPinWheelButton(int index)
     {
         LessonPairData lessonPairData = _lessonPairDataList[index];
