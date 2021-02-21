@@ -1,7 +1,9 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -76,7 +78,46 @@ public class LessonSelectScript : MonoBehaviour
         buttonText.text = lessonPairData.lessonPairName;
         
         pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
-        
+
+        String description = getDescription(buttonText.text);
+        Text buttonDescriptionText = pinButton.transform.FindChild("DescriptionText").GetComponent<Text>();
+        buttonDescriptionText.text = description;
+
         return pinButton;
+    }
+
+
+    private String getDescription(String buttonName)
+    {
+        JObject lessons;
+        String path = Application.dataPath + "/SaveData/" +"userInfo.json";
+
+        using (StreamReader r = new StreamReader(path))
+        {
+            string json = r.ReadToEnd();
+            lessons = JObject.Parse(json);
+        }
+
+        foreach (KeyValuePair<string, JToken> lesson in lessons)
+        {
+            JToken lessonVideos = lesson.Value[buttonName];
+            if (lessonVideos != null)
+            {
+                foreach (JToken video in lessonVideos)
+                {
+                    foreach (JToken completion in video.Children())
+                    {
+                        Boolean isComplete = completion.Value<Boolean>();
+
+                        if (isComplete)
+                        {
+                            return "Complete";
+                        }
+                    }
+                    
+                }  
+            }   
+        }
+        return "Incomplete";
     }
 }
