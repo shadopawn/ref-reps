@@ -3,7 +3,6 @@ using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -79,7 +78,9 @@ public class LessonSelectScript : MonoBehaviour
         
         pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
 
-        String description = getDescription(buttonText.text);
+
+        String lessonPackName = LessonTitle.GetComponent<Text>().text;
+        String description = getDescription(buttonText.text, lessonPackName );
         Text buttonDescriptionText = pinButton.transform.FindChild("DescriptionText").GetComponent<Text>();
         buttonDescriptionText.text = description;
 
@@ -87,37 +88,17 @@ public class LessonSelectScript : MonoBehaviour
     }
 
 
-    private String getDescription(String buttonName)
+    private String getDescription(String buttonName, string lessonName)
     {
-        JObject lessons;
         String path = Application.dataPath + "/SaveData/" +"userInfo.json";
+        SaveData data = new SaveData(path);
 
-        using (StreamReader r = new StreamReader(path))
+        if (data.IsLessonPairComplete(lessonName, buttonName))
         {
-            string json = r.ReadToEnd();
-            lessons = JObject.Parse(json);
-        }
-
-        foreach (KeyValuePair<string, JToken> lesson in lessons)
-        {
-            JToken lessonVideos = lesson.Value[buttonName];
-            if (lessonVideos != null)
-            {
-                foreach (JToken video in lessonVideos)
-                {
-                    foreach (JToken completion in video.Children())
-                    {
-                        Boolean isComplete = completion.Value<Boolean>();
-
-                        if (isComplete)
-                        {
-                            return "Complete";
-                        }
-                    }
-                    
-                }  
-            }   
+            return "Complete";
         }
         return "Incomplete";
+
+       
     }
 }
