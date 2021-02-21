@@ -90,6 +90,8 @@ public class videoPlayerScript : MonoBehaviour
                 callUIObject.transform.Find("Incorrect").gameObject.SetActive(true);
             }
             callMade = false;
+            
+            LessonModuleController.SaveCompleteCurrentLessonPair();
         }
     }
 }

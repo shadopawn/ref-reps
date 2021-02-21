@@ -11,9 +11,13 @@ public class LessonModuleController : MonoBehaviour
     public List<LessonPairData> lessonPairDataList;
 
     public int lessonNum = 1;
+    
+    private SaveData _saveData;
 
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
+
+        _saveData = new SaveData();
     }
 
     public void SetLessonPackName(String packName)
@@ -30,9 +34,19 @@ public class LessonModuleController : MonoBehaviour
     {
         return lessonPairDataList[lessonNum];
     }
+    
+    public String GetCurrentLessonPairName()
+    {
+        return lessonPairDataList[lessonNum].lessonPairName;
+    }
 
     public int GetLessonPairCount()
     {
         return lessonPairDataList.Count;
+    }
+
+    public void SaveCompleteCurrentLessonPair()
+    {
+        _saveData.CompleteLessonPair(lessonPackName, GetCurrentLessonPairName());
     }
 }
