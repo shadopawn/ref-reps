@@ -23,4 +23,9 @@ public class LessonModuleController : MonoBehaviour
     {
         return lessonPairDataList[lessonNum];
     }
+
+    public int GetLessonPairCount()
+    {
+        return lessonPairDataList.Count;
+    }
 }

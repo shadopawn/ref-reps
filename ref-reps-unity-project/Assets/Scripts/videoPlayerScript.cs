@@ -56,11 +56,11 @@ public class videoPlayerScript : MonoBehaviour
         if(vPlayer.url == lessonPairData.analysisVideoUrl){
             Debug.Log("VideoDone");
             vPlayer.Pause();
-            if(LessonModuleController.lessonNum < LessonModuleController.lessons.Count - 1){
+            if(LessonModuleController.lessonNum < LessonModuleController.GetLessonPairCount() - 1){
                 TransitionPanel.SetActive(true);
                 TransitionPanel.transform.parent.gameObject.SetActive(true);
             }
-            if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
+            if(LessonModuleController.lessonNum >= LessonModuleController.GetLessonPairCount() - 1){
                 TransitionPanel.transform.parent.gameObject.SetActive(true);
                 ModuleCompletePanel.SetActive(true);
             }

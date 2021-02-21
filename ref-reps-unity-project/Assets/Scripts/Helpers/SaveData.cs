@@ -63,6 +63,7 @@ public class SaveData
         else
         {
             //if pack does exist overwrite or create new lesson pair and set to complete
+            //this might remove other data stored under a lesson pair
             _saveDataJObject[lessonPackName][lessonPairName] = new JObject
             {
                 {"completed", true}
