@@ -90,8 +90,7 @@ public class LessonSelectScript : MonoBehaviour
 
     private String getDescription(String buttonName, string lessonName)
     {
-        String path = Application.dataPath + "/SaveData/" +"userInfo.json";
-        SaveData data = new SaveData(path);
+        SaveData data = new SaveData();
 
         if (data.IsLessonPairComplete(lessonName, buttonName))
         {
