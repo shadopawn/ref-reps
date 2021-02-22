@@ -22,8 +22,7 @@
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +82,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameControllerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -167,7 +166,7 @@
       <workItem from="1613422570563" duration="3278000" />
       <workItem from="1613514705544" duration="779000" />
       <workItem from="1613603040838" duration="4335000" />
-      <workItem from="1613616286338" duration="31839000" />
+      <workItem from="1613616286338" duration="37231000" />
     </task>
     <servers />
   </component>
