@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,8 @@ public class LessonSelectScript : MonoBehaviour
     
     private LessonModuleController _lessonModuleController;
 
+    private SaveData _saveData;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,8 @@ public class LessonSelectScript : MonoBehaviour
         _lessonModuleController = GameObject.Find("LessonModuleController").GetComponent<LessonModuleController>();
 
         _lessonPackName = GetComponentInChildren<Text>().text;
+
+        _saveData = new SaveData();
 
     }
 
@@ -76,7 +81,24 @@ public class LessonSelectScript : MonoBehaviour
         buttonText.text = lessonPairData.lessonPairName;
         
         pinButton.GetComponent<WatchLessonScript>().LessonParent = LessonParent;
-        
+
+
+        String lessonPackName = LessonTitle.GetComponent<Text>().text;
+        String description = GetIsCompleteText(lessonPairData.lessonPairName, lessonPackName );
+        Text buttonDescriptionText = pinButton.transform.Find("DescriptionText").GetComponent<Text>();
+        buttonDescriptionText.text = description;
+
         return pinButton;
+    }
+
+
+    private String GetIsCompleteText(String buttonName, string lessonName)
+    {
+        if (_saveData.IsLessonPairComplete(lessonName, buttonName))
+        {
+            return "Complete";
+        }
+        return "Incomplete";
+        
     }
 }
