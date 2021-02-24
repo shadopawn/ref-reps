@@ -16,13 +16,13 @@ namespace Tests
         private string _saveDirectory;
         private string _saveFile;
         
-        private String _customFilePath = Application.dataPath + "/SaveData/testSaveData.json";
+        private readonly string _customFilePath = Application.dataPath + "/SaveData/testSaveData.json";
 
         [SetUp]
         public void Setup()
         {
-            _saveData = new SaveData();
-            
+            _saveData = new SaveData(_customFilePath);
+
             _saveDirectory = Application.dataPath + "/SaveData";
             _saveFile = _saveDirectory + "/userInfo.json";
         }
@@ -30,6 +30,7 @@ namespace Tests
         [Test]
         public void TestCreateDirectory()
         {
+            SaveData defaultSaveData = new SaveData();
             bool directoryExists = Directory.Exists(_saveDirectory);
             Assert.True(directoryExists);
         }
@@ -37,6 +38,7 @@ namespace Tests
         [Test]
         public void TestCreateSaveFile()
         {
+            SaveData defaultSaveData = new SaveData();
             bool fileExists = File.Exists(_saveFile);
             Assert.True(fileExists);
         }
@@ -44,7 +46,6 @@ namespace Tests
         [Test]
         public void TestCreateDirectoryCustomPath()
         {
-            SaveData saveData = new SaveData(_customFilePath);
             String directory = Path.GetDirectoryName(_customFilePath);
             bool directoryExists = Directory.Exists(directory);
             Assert.True(directoryExists);
@@ -53,7 +54,6 @@ namespace Tests
         [Test]
         public void TestCreateSaveFileCustomPath()
         {
-            SaveData saveData = new SaveData(_customFilePath);
             bool fileExists = File.Exists(_customFilePath);
             Assert.True(fileExists);
         }
@@ -61,8 +61,7 @@ namespace Tests
         [Test]
         public void TestCompleteLessonPair()
         {
-            SaveData saveData = new SaveData(_customFilePath);
-            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expecteText = @"{
                 'Lesson Pack 1': {
@@ -79,9 +78,8 @@ namespace Tests
         [Test]
         public void TestCompleteLessonPairMultipleUnique()
         {
-            SaveData saveData = new SaveData(_customFilePath);
-            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
-            saveData.CompleteLessonPair("Lesson Pack 2", "Video 2");
+            _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            _saveData.CompleteLessonPair("Lesson Pack 2", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expecteText = @"{
                 'Lesson Pack 1': {
@@ -103,9 +101,8 @@ namespace Tests
         [Test]
         public void TestCompleteLessonPairMultipleInPack()
         {
-            SaveData saveData = new SaveData(_customFilePath);
-            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
-            saveData.CompleteLessonPair("Lesson Pack 1", "Video 2");
+            _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            _saveData.CompleteLessonPair("Lesson Pack 1", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expecteText = @"{
                 'Lesson Pack 1': {
@@ -125,17 +122,15 @@ namespace Tests
         [Test]
         public void TestIsLessonPairCompleteFalse()
         {
-            SaveData saveData = new SaveData(_customFilePath);
-            bool isComplete = saveData.IsLessonPairComplete("test", "test");
+            bool isComplete = _saveData.IsLessonPairComplete("test", "test");
             Assert.False(isComplete);
         }
         
         [Test]
         public void TestIsLessonPairCompleteTrue()
         {
-            SaveData saveData = new SaveData(_customFilePath);
-            saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
-            bool isComplete = saveData.IsLessonPairComplete("Lesson Pack 1", "Video 1");
+            _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
+            bool isComplete = _saveData.IsLessonPairComplete("Lesson Pack 1", "Video 1");
             Assert.True(isComplete);
         }
 
