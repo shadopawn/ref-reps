@@ -45,10 +45,18 @@ public class SaveData
             //if pack and pair already exist set to complete
             lessonPackJObject["completed"] = true;
         }
-
-        if (_saveDataJObject[lessonPackName] == null)
+        else if (_saveDataJObject[lessonPackName] != null)
         {
-            //if pack does not exist create new pack entry with completed lesson pair
+            //if pack exists overwrite or create new lesson pair and set to complete
+            //this might remove other data stored under a lesson pair
+            _saveDataJObject[lessonPackName][lessonPairName] = new JObject
+            {
+                {"completed", true}
+            };
+        }
+        else if (_saveDataJObject[lessonPackName] == null)
+        {
+            //if pack does not exist create new pack and pair entry entry with completed lesson pair
             _saveDataJObject[lessonPackName] = new JObject
             {
                 {
@@ -60,15 +68,6 @@ public class SaveData
                 }
             };
         }
-        else
-        {
-            //if pack does exist overwrite or create new lesson pair and set to complete
-            //this might remove other data stored under a lesson pair
-            _saveDataJObject[lessonPackName][lessonPairName] = new JObject
-            {
-                {"completed", true}
-            };
-        }
         
         File.WriteAllText(_saveFile, _saveDataJObject.ToString());
     }
@@ -78,5 +77,54 @@ public class SaveData
         bool? isComplete = _saveDataJObject[lessonPackName]?[lessonPairName]?.Value<bool>("completed");
 
         return isComplete ?? false;
+    }
+    
+    public void MakeCorrectCall(string lessonPackName, string lessonPairName)
+    {
+
+        IncrementProperty(lessonPackName, lessonPairName, "correct_calls");
+
+        File.WriteAllText(_saveFile, _saveDataJObject.ToString());
+    }
+    
+    public void MakeIncorrectCall(string lessonPackName, string lessonPairName)
+    {
+
+        IncrementProperty(lessonPackName, lessonPairName, "incorrect_calls");
+
+        File.WriteAllText(_saveFile, _saveDataJObject.ToString());
+    }
+
+    private void IncrementProperty(string lessonPackName, string lessonPairName, string property)
+    {
+        if (_saveDataJObject[lessonPackName]?[lessonPairName] is JObject lessonPackJObject)
+        {
+            //if pack and pair already exist add to correct calls
+            int? correctCalls = lessonPackJObject.Value<int?>(property) ?? 0;
+            lessonPackJObject[property] = correctCalls + 1;
+        }
+        else if (_saveDataJObject[lessonPackName] != null)
+        {
+            //if pack exists overwrite or create new lesson pair and set to complete
+            //this might remove other data stored under a lesson pair
+            _saveDataJObject[lessonPackName][lessonPairName] = new JObject
+            {
+                {property, 1}
+            };
+        }
+        else if (_saveDataJObject[lessonPackName] == null)
+        {
+            //if pack does not exist create new pack and pair entry with 1 correct call
+            _saveDataJObject[lessonPackName] = new JObject
+            {
+                {
+                    lessonPairName,
+                    new JObject
+                    {
+                        { property, 1 }
+                    }
+                }
+            };
+        }
     }
 }
