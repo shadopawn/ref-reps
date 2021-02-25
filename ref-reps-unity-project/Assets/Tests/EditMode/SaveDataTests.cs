@@ -212,6 +212,85 @@ namespace Tests
             JObject expectedJObject = JObject.Parse(expecteText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
+        
+        [Test]
+        public void TestMakeIncorrectCall()
+        {
+            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'incorrect_calls': 1 
+                    } 
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
+        
+        [Test]
+        public void TestMakeTwoIncorrectCalls()
+        {
+            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'incorrect_calls': 2 
+                    } 
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
+        
+        [Test]
+        public void TestMakeIncorrectCallMultipleUnique()
+        {
+            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeCorrectCall("Lesson Pack 2", "Video 2");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'incorrect_calls': 1
+                    } 
+                },
+                'Lesson Pack 2': {
+                    'Video 2': {
+                        'incorrect_calls': 1
+                    }
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
+        
+        [Test]
+        public void TestMakeIncorrectCallMultipleInPack()
+        {
+            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 2");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expecteText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'incorrect_calls': 1
+                    },
+                    'Video 2': { 
+                        'incorrect_calls': 1
+                    },
+                } 
+            }";
+            JObject saveFileJObject = JObject.Parse(saveFileText);
+            JObject expectedJObject = JObject.Parse(expecteText);
+            Assert.AreEqual(saveFileJObject, expectedJObject);
+        }
 
         [TearDown]
         public void TearDown()
