@@ -63,7 +63,7 @@ namespace Tests
         {
             _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'completed': true 
@@ -71,7 +71,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -81,7 +81,7 @@ namespace Tests
             _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
             _saveData.CompleteLessonPair("Lesson Pack 2", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'completed': true 
@@ -94,7 +94,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -104,7 +104,7 @@ namespace Tests
             _saveData.CompleteLessonPair("Lesson Pack 1", "Video 1");
             _saveData.CompleteLessonPair("Lesson Pack 1", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'completed': true 
@@ -115,7 +115,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -139,7 +139,7 @@ namespace Tests
         {
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'correct_calls': 1 
@@ -147,7 +147,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -157,7 +157,7 @@ namespace Tests
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'correct_calls': 2 
@@ -165,7 +165,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -175,7 +175,7 @@ namespace Tests
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             _saveData.MakeCorrectCall("Lesson Pack 2", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'correct_calls': 1
@@ -188,7 +188,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -198,7 +198,7 @@ namespace Tests
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'correct_calls': 1
@@ -209,7 +209,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -218,7 +218,7 @@ namespace Tests
         {
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'incorrect_calls': 1 
@@ -226,7 +226,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -236,7 +236,7 @@ namespace Tests
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'incorrect_calls': 2 
@@ -244,7 +244,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -254,7 +254,7 @@ namespace Tests
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             _saveData.MakeCorrectCall("Lesson Pack 2", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'incorrect_calls': 1
@@ -267,7 +267,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
         
@@ -277,7 +277,7 @@ namespace Tests
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
             _saveData.MakeCorrectCall("Lesson Pack 1", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
-            String expecteText = @"{
+            String expectedText = @"{
                 'Lesson Pack 1': {
                     'Video 1': { 
                         'incorrect_calls': 1
@@ -288,7 +288,7 @@ namespace Tests
                 } 
             }";
             JObject saveFileJObject = JObject.Parse(saveFileText);
-            JObject expectedJObject = JObject.Parse(expecteText);
+            JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileJObject, expectedJObject);
         }
 
