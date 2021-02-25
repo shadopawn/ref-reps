@@ -99,13 +99,13 @@ public class SaveData
     {
         if (_saveDataJObject[lessonPackName]?[lessonPairName] is JObject lessonPackJObject)
         {
-            //if pack and pair already exist add to correct calls
+            //if pack and pair already exist add to the property
             int? correctCalls = lessonPackJObject.Value<int?>(property) ?? 0;
             lessonPackJObject[property] = correctCalls + 1;
         }
         else if (_saveDataJObject[lessonPackName] != null)
         {
-            //if pack exists overwrite or create new lesson pair and set to complete
+            //if pack exists overwrite or create new lesson pair and set property to 1
             //this might remove other data stored under a lesson pair
             _saveDataJObject[lessonPackName][lessonPairName] = new JObject
             {
@@ -114,7 +114,7 @@ public class SaveData
         }
         else if (_saveDataJObject[lessonPackName] == null)
         {
-            //if pack does not exist create new pack and pair entry with 1 correct call
+            //if pack does not exist create new pack and pair entry with property set to 1
             _saveDataJObject[lessonPackName] = new JObject
             {
                 {
