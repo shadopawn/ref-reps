@@ -70,9 +70,8 @@ namespace Tests
                     } 
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
@@ -93,9 +92,8 @@ namespace Tests
                     }
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
@@ -114,9 +112,8 @@ namespace Tests
                     },
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
@@ -146,9 +143,8 @@ namespace Tests
                     } 
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
@@ -164,9 +160,8 @@ namespace Tests
                     } 
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
@@ -187,9 +182,8 @@ namespace Tests
                     }
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
@@ -208,15 +202,14 @@ namespace Tests
                     },
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
         public void TestMakeIncorrectCall()
         {
-            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeIncorrectCall("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expectedText = @"{
                 'Lesson Pack 1': {
@@ -225,16 +218,15 @@ namespace Tests
                     } 
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
         public void TestMakeTwoIncorrectCalls()
         {
-            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
-            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeIncorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeIncorrectCall("Lesson Pack 1", "Video 1");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expectedText = @"{
                 'Lesson Pack 1': {
@@ -243,16 +235,15 @@ namespace Tests
                     } 
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
         public void TestMakeIncorrectCallMultipleUnique()
         {
-            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
-            _saveData.MakeCorrectCall("Lesson Pack 2", "Video 2");
+            _saveData.MakeIncorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeIncorrectCall("Lesson Pack 2", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expectedText = @"{
                 'Lesson Pack 1': {
@@ -266,16 +257,15 @@ namespace Tests
                     }
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
         
         [Test]
         public void TestMakeIncorrectCallMultipleInPack()
         {
-            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 1");
-            _saveData.MakeCorrectCall("Lesson Pack 1", "Video 2");
+            _saveData.MakeIncorrectCall("Lesson Pack 1", "Video 1");
+            _saveData.MakeIncorrectCall("Lesson Pack 1", "Video 2");
             String saveFileText = File.ReadAllText(_customFilePath);
             String expectedText = @"{
                 'Lesson Pack 1': {
@@ -287,9 +277,8 @@ namespace Tests
                     },
                 } 
             }";
-            JObject saveFileJObject = JObject.Parse(saveFileText);
             JObject expectedJObject = JObject.Parse(expectedText);
-            Assert.AreEqual(saveFileJObject, expectedJObject);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
 
         [TearDown]
