@@ -49,4 +49,14 @@ public class LessonModuleController : MonoBehaviour
     {
         _saveData.CompleteLessonPair(lessonPackName, GetCurrentLessonPairName());
     }
+
+    public void SaveMakeCorrectCall()
+    {
+        _saveData.MakeCorrectCall(lessonPackName, GetCurrentLessonPairName());
+    }
+    
+    public void SaveMakeIncorrectCall()
+    {
+        _saveData.MakeIncorrectCall(lessonPackName, GetCurrentLessonPairName());
+    }
 }

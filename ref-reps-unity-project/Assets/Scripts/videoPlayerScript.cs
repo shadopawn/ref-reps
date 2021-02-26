@@ -86,8 +86,12 @@ public class videoPlayerScript : MonoBehaviour
             EndLessonAnim.SetBool("isActive", true);
             if(callName == lessonPairData.correctCall){
                 callUIObject.transform.Find("Correct").gameObject.SetActive(true);
+                
+                LessonModuleController.SaveMakeCorrectCall();
             }else{
                 callUIObject.transform.Find("Incorrect").gameObject.SetActive(true);
+                
+                LessonModuleController.SaveMakeIncorrectCall();
             }
             callMade = false;
             
