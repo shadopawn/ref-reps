@@ -160,6 +160,7 @@
           <e p="handScript.cs" t="Include" />
           <e p="Helpers" t="Include">
             <e p="JsonParser.cs" t="Include" />
+            <e p="SaveData.cs" t="Include" />
           </e>
           <e p="IconInteractScript.cs" t="Include" />
           <e p="KinectVideoScript.cs" t="Include" />
@@ -322,6 +323,7 @@
             <e p="DatabaseTests.cs" t="Include" />
             <e p="JsonParserTests.cs" t="Include" />
             <e p="LessonPairDataTests.cs" t="Include" />
+            <e p="SaveDataTests.cs" t="Include" />
           </e>
           <e p="PlayMode" t="Include">
             <e p="DownloadVideoTests.cs" t="Include" />

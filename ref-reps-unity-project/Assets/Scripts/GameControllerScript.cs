@@ -33,7 +33,7 @@ public class GameControllerScript : MonoBehaviour
         callsPanel = GameObject.Find("CallsPanel");
         AddCallOptions();
 
-        if(LessonModuleController.lessonNum >= LessonObject.calls.Length){
+        if(LessonModuleController.lessonNum >= LessonModuleController.GetLessonPairCount()){
             NextLessonTab.SetActive(false);
             NextLessonButton.SetActive(false);
         }

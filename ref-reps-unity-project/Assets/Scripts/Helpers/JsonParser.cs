@@ -8,8 +8,6 @@ using UnityEngine;
 
 public class JsonParser
 {
-    private Database _database = new Database();
-    
     public List<(String name, JToken lessonPairs)> GetLessonPacks(String json)
     {
         //instead of JToken possibly return scriptable object
@@ -36,6 +34,8 @@ public class JsonParser
             LessonPairData lessonPairData = ScriptableObject.CreateInstance<LessonPairData>();
             foreach (JToken lessonPairChild in lessonPair.Children())
             {
+                lessonPairData.lessonPairName = lessonPairChild.Value<String>("name");
+                
                 String callVideoURL = lessonPairChild.Value<String>("call_url");
                 String analysisVideoURL = lessonPairChild.Value<String>("analysis_url");
 

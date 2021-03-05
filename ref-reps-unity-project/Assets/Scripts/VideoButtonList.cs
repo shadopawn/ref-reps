@@ -14,8 +14,7 @@ public class VideoButtonList : MonoBehaviour
     private VideoPlayer _videoPlayer;
     private GameObject _videoSelectionCanvas;
     private GameObject _buttonList;
-    private Database _database = new Database();
-    
+    private Database _database = new Database();    
     
     async void Start()
     {
@@ -62,5 +61,7 @@ public class VideoButtonList : MonoBehaviour
         buttonComponent.onClick.AddListener(() => PlayVideo(videoUrl));
         Text buttonTextComponent = newButton.GetComponentInChildren<Text>();
         buttonTextComponent.text = buttonText;
+
     }
+    
 }

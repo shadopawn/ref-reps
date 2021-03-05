@@ -54,13 +54,16 @@ public class videoPlayerScript : MonoBehaviour
         }
         
         if(vPlayer.url == lessonPairData.analysisVideoUrl){
-            Debug.Log("VideoDone");
+            Debug.Log("Analysis Video Done");
+            
+            LessonModuleController.SaveAnalysisView();
+            
             vPlayer.Pause();
-            if(LessonModuleController.lessonNum < LessonModuleController.lessons.Count - 1){
+            if(LessonModuleController.lessonNum < LessonModuleController.GetLessonPairCount() - 1){
                 TransitionPanel.SetActive(true);
                 TransitionPanel.transform.parent.gameObject.SetActive(true);
             }
-            if(LessonModuleController.lessonNum >= LessonModuleController.lessons.Count - 1){
+            if(LessonModuleController.lessonNum >= LessonModuleController.GetLessonPairCount() - 1){
                 TransitionPanel.transform.parent.gameObject.SetActive(true);
                 ModuleCompletePanel.SetActive(true);
             }
@@ -86,10 +89,16 @@ public class videoPlayerScript : MonoBehaviour
             EndLessonAnim.SetBool("isActive", true);
             if(callName == lessonPairData.correctCall){
                 callUIObject.transform.Find("Correct").gameObject.SetActive(true);
+                
+                LessonModuleController.SaveMakeCorrectCall();
             }else{
                 callUIObject.transform.Find("Incorrect").gameObject.SetActive(true);
+                
+                LessonModuleController.SaveMakeIncorrectCall();
             }
             callMade = false;
+            
+            LessonModuleController.SaveCompleteCurrentLessonPair();
         }
     }
 }

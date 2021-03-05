@@ -26,11 +26,11 @@ public class LessonPackButtonList : MonoBehaviour
         }
     }
 
-    private void CreateNewButton(String buttonText, JToken lessonPairs)
+    private void CreateNewButton(String lessonPackName, JToken lessonPairs)
     {
         GameObject lessonPackButton = Instantiate(lessonPackButtonPrefab, transform);
         Text buttonTextComponent = lessonPackButton.GetComponentInChildren<Text>();
-        buttonTextComponent.text = buttonText;
+        buttonTextComponent.text = lessonPackName;
         
         List<LessonPairData> lessonPairObjects = _jsonParser.CreateLessonPairs(lessonPairs);
         lessonPackButton.GetComponent<LessonSelectScript>().SetLessonPairDataList(lessonPairObjects);
