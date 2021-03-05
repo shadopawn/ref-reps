@@ -94,6 +94,14 @@ public class SaveData
 
         File.WriteAllText(_saveFile, _saveDataJObject.ToString());
     }
+    
+    public void AddAnalysisView(string lessonPackName, string lessonPairName)
+    {
+
+        IncrementProperty(lessonPackName, lessonPairName, "analysis_views");
+
+        File.WriteAllText(_saveFile, _saveDataJObject.ToString());
+    }
 
     private void IncrementProperty(string lessonPackName, string lessonPairName, string property)
     {

@@ -280,6 +280,81 @@ namespace Tests
             JObject expectedJObject = JObject.Parse(expectedText);
             Assert.AreEqual(saveFileText, expectedJObject.ToString());
         }
+        
+        [Test]
+        public void TestAddAnalysisView()
+        {
+            _saveData.AddAnalysisView("Lesson Pack 1", "Video 1");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expectedText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'analysis_views': 1 
+                    } 
+                } 
+            }";
+            JObject expectedJObject = JObject.Parse(expectedText);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
+        }
+        
+        [Test]
+        public void TestAddTwoAnalysisViews()
+        {
+            _saveData.AddAnalysisView("Lesson Pack 1", "Video 1");
+            _saveData.AddAnalysisView("Lesson Pack 1", "Video 1");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expectedText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'analysis_views': 2 
+                    } 
+                } 
+            }";
+            JObject expectedJObject = JObject.Parse(expectedText);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
+        }
+        
+        [Test]
+        public void TestAddAnalysisViewMultipleUnique()
+        {
+            _saveData.AddAnalysisView("Lesson Pack 1", "Video 1");
+            _saveData.AddAnalysisView("Lesson Pack 2", "Video 2");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expectedText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'analysis_views': 1
+                    } 
+                },
+                'Lesson Pack 2': {
+                    'Video 2': {
+                        'analysis_views': 1
+                    }
+                } 
+            }";
+            JObject expectedJObject = JObject.Parse(expectedText);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
+        }
+        
+        [Test]
+        public void TestAddAnalysisViewMultipleInPack()
+        {
+            _saveData.AddAnalysisView("Lesson Pack 1", "Video 1");
+            _saveData.AddAnalysisView("Lesson Pack 1", "Video 2");
+            String saveFileText = File.ReadAllText(_customFilePath);
+            String expectedText = @"{
+                'Lesson Pack 1': {
+                    'Video 1': { 
+                        'analysis_views': 1
+                    },
+                    'Video 2': { 
+                        'analysis_views': 1
+                    },
+                } 
+            }";
+            JObject expectedJObject = JObject.Parse(expectedText);
+            Assert.AreEqual(saveFileText, expectedJObject.ToString());
+        }
 
         [TearDown]
         public void TearDown()
