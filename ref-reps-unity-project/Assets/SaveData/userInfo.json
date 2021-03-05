@@ -15,7 +15,11 @@
     },
     "Pack 1 Pair 2": {
       "correct_calls": 1,
-      "completed": true
+      "completed": true,
+      "analysis_views": 2
+    },
+    "Video 2": {
+      "analysis_views": 1
     }
   },
   "Lesson Pack 2": {

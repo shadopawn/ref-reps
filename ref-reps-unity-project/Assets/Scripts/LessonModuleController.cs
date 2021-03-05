@@ -59,4 +59,9 @@ public class LessonModuleController : MonoBehaviour
     {
         _saveData.MakeIncorrectCall(lessonPackName, GetCurrentLessonPairName());
     }
+
+    public void SaveAnalysisView()
+    {
+        _saveData.AddAnalysisView(lessonPackName, GetCurrentLessonPairName());
+    }
 }
