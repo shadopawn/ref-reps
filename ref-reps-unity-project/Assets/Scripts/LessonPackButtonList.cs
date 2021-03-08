@@ -33,7 +33,7 @@ public class LessonPackButtonList : MonoBehaviour
         buttonTextComponent.text = lessonPackName;
 
         Transform CursorStart = lessonPackButton.transform.GetChild(4);
-        Vector2 handPosition = new Vector2(-160,lessonPackButton.transform.position.y);
+        Vector2 handPosition = new Vector2(-200,lessonPackButton.transform.position.y);
         CursorStart.position = handPosition;
         
         List<LessonPairData> lessonPairObjects = _jsonParser.CreateLessonPairs(lessonPairs);
