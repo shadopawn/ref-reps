@@ -17,7 +17,7 @@ public class CursorStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cursorStart.position = new Vector2(transform.parent.transform.position.x - transform.parent.GetComponent<RectTransform>().rect.width, transform.parent.transform.position.y);
-        // cursorNode.position = cursorStart.position;
+        //cursorStart.position = new Vector2(transform.parent.transform.position.x - transform.parent.GetComponent<RectTransform>().rect.width/2, transform.parent.transform.position.y);
+        //cursorNode.position = cursorStart.position;
     }
 }
