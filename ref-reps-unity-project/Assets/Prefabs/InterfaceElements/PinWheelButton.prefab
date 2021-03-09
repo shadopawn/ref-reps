@@ -937,7 +937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7847729590945834175
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1116,6 +1116,7 @@ MonoBehaviour:
   thisButton: {fileID: 4558624168400184302}
   VideoParent: {fileID: 0}
   LessonParent: {fileID: 0}
+  PinWheelButton: {fileID: 0}
 --- !u!1 &7737836128340562496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1155,7 +1156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266.00006, y: 0.40000153}
+  m_AnchoredPosition: {x: -266, y: 0.40001678}
   m_SizeDelta: {x: 485, y: 174}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &6387342910207508879
@@ -1337,7 +1338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0.000061035156, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: 485, y: 174}
   m_Pivot: {x: 1, y: 0.49999994}
 --- !u!222 &1696763951717741393

@@ -69,7 +69,7 @@ public class TitleButtonScript : MonoBehaviour
             //Mouse Action
             if(mouseDown){
                 if(mouseX >= CursorStart.position.x){
-                    transform.position = new Vector2(Mathf.Clamp(mouseX + mouseDist, 0f ,CursorStart.position.x + w/2), transform.position.y);
+                    transform.position = new Vector2(Mathf.Clamp(mouseX + mouseDist, 0f ,CursorStart.position.x + w), transform.position.y);
                 }
             }
             mouseDist = (mouseX - transform.position.x) * -1;
@@ -97,8 +97,9 @@ public class TitleButtonScript : MonoBehaviour
 
         //Handle Button Execution
         float xMoved = transform.position.x;
-        float barWidth = CursorStart.position.x + w/3;
-        if(xMoved > barWidth){
+        float barWidth = w;
+
+        if(xMoved >= barWidth){
             Execute();    
         }
         

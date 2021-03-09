@@ -27,7 +27,7 @@ public class LessonSelectScript : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void start()
     {
         LessonTitle = GameObject.Find("LessonTitle");
         PinWheelCompoonenet = GameObject.Find("PinWheel")?.GetComponent<PinWheel>();
@@ -73,6 +73,11 @@ public class LessonSelectScript : MonoBehaviour
         LessonPairData lessonPairData = _lessonPairDataList[index];
         
         GameObject pinButton = Instantiate(PinWheelButton, transform.position, Quaternion.identity, PinWheelCompoonenet.transform);
+
+        /*Transform CursorStart = pinButton.transform.GetChild(5);
+        Vector2 handPosition = new Vector2(-200,pinButton.transform.position.y);
+        CursorStart.position = handPosition;*/
+
         Text buttonText = pinButton.GetComponentInChildren<Text>();
         if (string.IsNullOrEmpty(lessonPairData.lessonPairName))
         {
