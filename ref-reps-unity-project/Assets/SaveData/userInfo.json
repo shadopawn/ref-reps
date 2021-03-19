@@ -7,27 +7,19 @@
       "completed": true
     }
   },
-  "Lesson Pack 1": {
-    "Pack 1 Pair 1": {
-      "completed": true,
-      "correct_calls": 1,
-      "incorrect_calls": 1
-    },
-    "Pack 1 Pair 2": {
-      "correct_calls": 1,
-      "completed": true,
-      "analysis_views": 2
-    },
-    "Video 2": {
-      "analysis_views": 1
-    }
-  },
   "Lesson Pack 2": {
     "Pack 2 Pair 1": {
-      "completed": true
+      "completed": true,
+      "analysis_views": 1
     },
     "Video 2": {
       "incorrect_calls": 1,
+      "completed": true
+    }
+  },
+  "Lesson Pack 1": {
+    "Video 1": {
+      "correct_calls": 1,
       "completed": true
     }
   }

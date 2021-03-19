@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +169,7 @@
       <workItem from="1614206420798" duration="10237000" />
       <workItem from="1614824454931" duration="1059000" />
       <workItem from="1614904432843" duration="1243000" />
+      <workItem from="1615476958660" duration="1411000" />
     </task>
     <servers />
   </component>
