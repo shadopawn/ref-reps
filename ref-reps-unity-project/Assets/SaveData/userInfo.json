@@ -19,7 +19,19 @@
   },
   "Lesson Pack 1": {
     "Video 1": {
+      "correct_calls": 3,
+      "completed": true,
+      "analysis_views": 1
+    },
+    "Video 2": {
+      "analysis_views": 1,
       "correct_calls": 1,
+      "completed": true
+    }
+  },
+  "Evan's Test": {
+    "!%$\"GG'^": {
+      "incorrect_calls": 1,
       "completed": true
     }
   }

@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +84,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/SaveDataTests.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -172,6 +173,7 @@
       <workItem from="1614904432843" duration="1243000" />
       <workItem from="1615476958660" duration="1411000" />
       <workItem from="1616284108433" duration="552000" />
+      <workItem from="1616631247029" duration="2693000" />
     </task>
     <servers />
   </component>
