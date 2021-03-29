@@ -22,10 +22,7 @@
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SaveData/userInfo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/VideoSelectScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +174,7 @@
       <workItem from="1616284108433" duration="552000" />
       <workItem from="1616631247029" duration="3039000" />
       <workItem from="1616709082337" duration="9796000" />
-      <workItem from="1617052618266" duration="1354000" />
+      <workItem from="1617052618266" duration="3238000" />
     </task>
     <servers />
   </component>

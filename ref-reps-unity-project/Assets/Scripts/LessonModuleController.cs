@@ -50,8 +50,8 @@ public class LessonModuleController : MonoBehaviour
     {
         if (_saveData.IsLessonPairComplete(lessonPackName, GetCurrentLessonPairName()) == false)
         {
-            AnalyticsResult result = CustomAnalyticEvent("CompleteLessonPair");
-            Debug.Log("SaveCompleteCurrentLessonPair AnalyticsResult: " + result);
+            AnalyticsResult result = CustomAnalyticEvent("Complete Lesson Pair");
+            Debug.Log("Complete Lesson Pair AnalyticsResult: " + result);
         }
         
         _saveData.CompleteLessonPair(lessonPackName, GetCurrentLessonPairName());
@@ -60,30 +60,30 @@ public class LessonModuleController : MonoBehaviour
     public void SaveMakeCorrectCall()
     {
         _saveData.MakeCorrectCall(lessonPackName, GetCurrentLessonPairName());
-        AnalyticsResult result = CustomAnalyticEvent("MakeCorrectCall");
-        Debug.Log("SaveMakeCorrectCall AnalyticsResult: " + result);
+        AnalyticsResult result = CustomAnalyticEvent("Make Correct Call");
+        Debug.Log("Make Correct Call AnalyticsResult: " + result);
     }
     
     public void SaveMakeIncorrectCall()
     {
         _saveData.MakeIncorrectCall(lessonPackName, GetCurrentLessonPairName());
-        AnalyticsResult result = CustomAnalyticEvent("MakeIncorrectCall");
-        Debug.Log("SaveMakeIncorrectCall AnalyticsResult: " + result);
+        AnalyticsResult result = CustomAnalyticEvent("Make Incorrect Call");
+        Debug.Log("Make Incorrect Call AnalyticsResult: " + result);
     }
 
     public void SaveAnalysisView()
     {
         _saveData.AddAnalysisView(lessonPackName, GetCurrentLessonPairName());
-        AnalyticsResult result = CustomAnalyticEvent("AnalysisVideoViewed");
-        Debug.Log("SaveAnalysisView AnalyticsResult: " + result);
+        AnalyticsResult result = CustomAnalyticEvent("Analysis Video Viewed");
+        Debug.Log("Analysis Video Viewed AnalyticsResult: " + result);
     }
 
     private AnalyticsResult CustomAnalyticEvent(String eventName)
     {
         return AnalyticsEvent.Custom(eventName, new Dictionary<string, object>
         {
-            { "lessonPackName", lessonPackName },
-            { "lessonPairName", GetCurrentLessonPairName() }
+            { "Lesson Pack Name", lessonPackName },
+            { "Lesson Pair Name", GetCurrentLessonPairName() }
         });
     }
 }
