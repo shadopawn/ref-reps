@@ -19,19 +19,26 @@
   },
   "Lesson Pack 1": {
     "Video 1": {
-      "correct_calls": 3,
+      "correct_calls": 5,
       "completed": true,
-      "analysis_views": 1
+      "analysis_views": 1,
+      "incorrect_calls": 2
     },
     "Video 2": {
-      "analysis_views": 1,
-      "correct_calls": 1,
+      "analysis_views": 2,
+      "correct_calls": 2,
       "completed": true
     }
   },
   "Evan's Test": {
     "!%$\"GG'^": {
       "incorrect_calls": 1,
+      "completed": true
+    }
+  },
+  "Lesson Pack 3": {
+    "Video 1": {
+      "correct_calls": 1,
       "completed": true
     }
   }

@@ -50,7 +50,8 @@ public class LessonModuleController : MonoBehaviour
     {
         if (_saveData.IsLessonPairComplete(lessonPackName, GetCurrentLessonPairName()) == false)
         {
-            CustomAnalyticEvent("CompleteLessonPair");
+            AnalyticsResult result = CustomAnalyticEvent("CompleteLessonPair");
+            Debug.Log("SaveCompleteCurrentLessonPair AnalyticsResult: " + result);
         }
         
         _saveData.CompleteLessonPair(lessonPackName, GetCurrentLessonPairName());
@@ -59,24 +60,27 @@ public class LessonModuleController : MonoBehaviour
     public void SaveMakeCorrectCall()
     {
         _saveData.MakeCorrectCall(lessonPackName, GetCurrentLessonPairName());
-        CustomAnalyticEvent("MakeCorrectCall");
+        AnalyticsResult result = CustomAnalyticEvent("MakeCorrectCall");
+        Debug.Log("SaveMakeCorrectCall AnalyticsResult: " + result);
     }
     
     public void SaveMakeIncorrectCall()
     {
         _saveData.MakeIncorrectCall(lessonPackName, GetCurrentLessonPairName());
-        CustomAnalyticEvent("MakeIncorrectCall");
+        AnalyticsResult result = CustomAnalyticEvent("MakeIncorrectCall");
+        Debug.Log("SaveMakeIncorrectCall AnalyticsResult: " + result);
     }
 
     public void SaveAnalysisView()
     {
         _saveData.AddAnalysisView(lessonPackName, GetCurrentLessonPairName());
-        CustomAnalyticEvent("AnalysisVideoViewed");
+        AnalyticsResult result = CustomAnalyticEvent("AnalysisVideoViewed");
+        Debug.Log("SaveAnalysisView AnalyticsResult: " + result);
     }
 
     private AnalyticsResult CustomAnalyticEvent(String eventName)
     {
-        return Analytics.CustomEvent(eventName, new Dictionary<string, object>
+        return AnalyticsEvent.Custom(eventName, new Dictionary<string, object>
         {
             { "lessonPackName", lessonPackName },
             { "lessonPairName", GetCurrentLessonPairName() }
