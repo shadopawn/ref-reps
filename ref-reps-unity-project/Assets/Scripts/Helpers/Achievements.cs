@@ -43,6 +43,16 @@ public class Achievements
     
     public List<(String name, String description, bool completed)> GetAchievements()
     {
-        return new List<(string name, string description, bool completed)>();
+        List<(string name, string description, bool completed)> achievementList  = new List<(string name, string description, bool completed)>();
+        foreach (KeyValuePair<string, JToken> achievement in _AchievementsJObject)
+        {
+            String name = achievement.Key;
+            String description = achievement.Value["description"]?.ToString();
+            bool completed = achievement.Value["completed"]?.ToObject<bool>() ?? false;
+            (string name, string description, bool completed) achievementTuple = (name, description, completed);
+            achievementList.Add(achievementTuple);
+        }
+
+        return achievementList;
     }
 }
