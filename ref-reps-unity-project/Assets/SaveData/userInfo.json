@@ -15,6 +15,11 @@
     "Video 2": {
       "incorrect_calls": 1,
       "completed": true
+    },
+    "Video 1": {
+      "analysis_views": 2,
+      "incorrect_calls": 1,
+      "completed": true
     }
   },
   "Lesson Pack 1": {
