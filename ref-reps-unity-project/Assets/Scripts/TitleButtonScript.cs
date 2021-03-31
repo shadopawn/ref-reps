@@ -100,7 +100,6 @@ public class TitleButtonScript : MonoBehaviour
         //Handle Button Execution
         float xMoved = transform.position.x;
         float barWidth = w;
-        Debug.LogError(xMoved + "     " + w + "    " + CursorStart.position.x);
         if(SlideBar.transform.position.x >= transform.parent.transform.position.x - 100){
             Execute();    
         }
