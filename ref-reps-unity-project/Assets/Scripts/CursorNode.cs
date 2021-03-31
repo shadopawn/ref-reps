@@ -9,6 +9,6 @@ public class CursorNode : MonoBehaviour
     // Start is called before the first frame update
     public void titleExecute()
     {
-        parentButton.GetComponent<LessonSelectScript>()?.titleExecute();
+        //parentButton.GetComponent<LessonSelectScript>()?.titleExecute();
     }
 }

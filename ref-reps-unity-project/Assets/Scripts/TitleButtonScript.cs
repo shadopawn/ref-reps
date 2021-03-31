@@ -41,8 +41,7 @@ public class TitleButtonScript : MonoBehaviour
     {
         //Set Cursor's Start Position to then end of the SlideButton
         float w = transform.parent.GetComponent<RectTransform>().rect.width;
-        Vector2 pos = new Vector2(Mathf.Clamp(transform.position.x, CursorStart.position.x ,CursorStart.position.x + w/2),CursorStart.position.y);
-        transform.position = pos;
+        
         //Get the Mouse's Position
         mouseX = Input.mousePosition.x;
 
@@ -68,8 +67,8 @@ public class TitleButtonScript : MonoBehaviour
 
             //Mouse Action
             if(mouseDown){
-                if(mouseX >= CursorStart.position.x){
-                    transform.position = new Vector2(Mathf.Clamp(mouseX + mouseDist, 0f ,CursorStart.position.x + w), transform.position.y);
+                if(mouseX >= CursorStart.transform.position.x){
+                    transform.position = new Vector2(Mathf.Clamp(mouseX + mouseDist, 0f ,CursorStart.transform.position.x + w), transform.position.y);
                 }
             }
             mouseDist = (mouseX - transform.position.x) * -1;
@@ -78,11 +77,11 @@ public class TitleButtonScript : MonoBehaviour
 
             //Kinect Cursor Action
             if(cursorSelected){
-                if(cursor.transform.position.x >= CursorStart.position.x){
-                    transform.position = new Vector2(cursor.transform.position.x, transform.position.y);
+                if(cursor.transform.position.x >= CursorStart.transform.position.x){
+                    //transform.position = new Vector2(cursor.transform.position.x, transform.position.y);
                 }
 
-                if(cursor.transform.position.x < CursorStart.position.x -250 || cursor.transform.position.y > CursorStart.transform.position.y + 250 || cursor.transform.position.y < CursorStart.transform.position.y - 250){
+                if(cursor.transform.position.x < CursorStart.transform.position.x -250 || cursor.transform.position.y > CursorStart.transform.position.y + 250 || cursor.transform.position.y < CursorStart.transform.position.y - 250){
                     // cursorSelected = false;
                     ResetPos();
                 }
@@ -96,10 +95,13 @@ public class TitleButtonScript : MonoBehaviour
 
 
         //Handle Button Execution
-        float xMoved = transform.position.x;
-        float barWidth = w;
+        
+        float xMoved = transform.position.x;// - CursorStart.transform.position.x;
+        float barWidth = transform.parent.GetComponent<RectTransform>().rect.width;
 
-        if(xMoved >= barWidth){
+        Debug.LogError("xMoved = "+xMoved+"    "+"bar = "+barWidth);
+        if(xMoved > barWidth || xMoved > 1000){
+            Debug.LogError("xMoved was larger than bar");
             Execute();    
         }
         
@@ -129,6 +131,6 @@ public class TitleButtonScript : MonoBehaviour
     void ResetPos(){
         mouseDown = false;
         cursorSelected = false;
-        transform.position = new Vector2(CursorStart.position.x, transform.position.y);
+        transform.position = new Vector2(CursorStart.transform.position.x, transform.position.y);
     }   
 }
