@@ -36,6 +36,9 @@ public class LessonPackButtonList : MonoBehaviour
         lessonPackButton.GetComponent<LessonSelectScript>().SetLessonPairDataList(lessonPairObjects);
 
         Transform CursorStart = lessonPackButton.transform.GetChild(4);
+        Transform CursorNode = lessonPackButton.transform.GetChild(3);
+
+        CursorNode.GetComponent<TitleButtonScript>().SlideBar = lessonPackButton.transform.GetChild(2).GetChild(0);
         Vector2 handPosition = new Vector2(-200,lessonPackButton.transform.position.y);
         CursorStart.position = handPosition;
         

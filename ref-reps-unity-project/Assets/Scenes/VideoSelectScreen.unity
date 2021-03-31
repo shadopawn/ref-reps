@@ -2856,7 +2856,6 @@ GameObject:
   - component: {fileID: 320510152}
   - component: {fileID: 320510151}
   - component: {fileID: 320510150}
-  - component: {fileID: 320510158}
   m_Layer: 5
   m_Name: CursorNode
   m_TagString: swipeButton
@@ -2987,6 +2986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
+  SlideBar: {fileID: 1874244859}
   cursor: {fileID: 0}
   CursorStart: {fileID: 614224099}
 --- !u!58 &320510155
@@ -3041,19 +3041,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320510148}
   m_CullTransparentMesh: 0
---- !u!114 &320510158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320510148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52b0887635593b14db0fb1bf484e1ddd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentButton: {fileID: 1366734109}
 --- !u!1 &323525660
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,7 +5110,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -280, y: 0}
+  m_AnchoredPosition: {x: -338, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &614224100
@@ -14031,7 +14018,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680681962}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
