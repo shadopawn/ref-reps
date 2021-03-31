@@ -17,9 +17,10 @@
       "completed": true
     },
     "Video 1": {
-      "analysis_views": 2,
+      "analysis_views": 3,
       "incorrect_calls": 1,
-      "completed": true
+      "completed": true,
+      "correct_calls": 1
     }
   },
   "Lesson Pack 1": {
@@ -27,7 +28,7 @@
       "correct_calls": 5,
       "completed": true,
       "analysis_views": 1,
-      "incorrect_calls": 3
+      "incorrect_calls": 4
     },
     "Video 2": {
       "analysis_views": 2,

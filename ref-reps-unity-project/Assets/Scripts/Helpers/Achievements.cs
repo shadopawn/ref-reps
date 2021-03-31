@@ -8,9 +8,9 @@ using UnityEngine;
 public class Achievements
 {
     
-    private JObject _AchievementsJObject = new JObject();
+    private readonly JObject _achievementsJObject = new JObject();
 
-    private String _achievementsFilePath;
+    private readonly String _achievementsFilePath;
 
     public Achievements(String customFilePath = null)
     {
@@ -24,16 +24,16 @@ public class Achievements
         else
         {
             String achievementsText = File.ReadAllText(_achievementsFilePath);
-            _AchievementsJObject = JObject.Parse(achievementsText);
+            _achievementsJObject = JObject.Parse(achievementsText);
         }
     }
 
     public void CompleteAchievement(String achievementName)
     {
-        if (_AchievementsJObject[achievementName] is JObject achievementJObject)
+        if (_achievementsJObject[achievementName] is JObject achievementJObject)
         {
             achievementJObject["completed"] = true;
-            File.WriteAllText(_achievementsFilePath, _AchievementsJObject.ToString());
+            File.WriteAllText(_achievementsFilePath, _achievementsJObject.ToString());
         }
         else
         {
@@ -44,7 +44,7 @@ public class Achievements
     public List<(String name, String description, bool completed)> GetAchievements()
     {
         List<(string name, string description, bool completed)> achievementList  = new List<(string name, string description, bool completed)>();
-        foreach (KeyValuePair<string, JToken> achievement in _AchievementsJObject)
+        foreach (KeyValuePair<string, JToken> achievement in _achievementsJObject)
         {
             String name = achievement.Key;
             String description = achievement.Value["description"]?.ToString();
