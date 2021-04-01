@@ -39,7 +39,7 @@ public class LessonPackButtonList : MonoBehaviour
         Transform CursorNode = lessonPackButton.transform.GetChild(3);
 
         CursorNode.GetComponent<TitleButtonScript>().SlideBar = lessonPackButton.transform.GetChild(2).GetChild(0);
-        Vector2 handPosition = new Vector2(-200,lessonPackButton.transform.position.y);
+        Vector2 handPosition = new Vector2(lessonPackButton.transform.position.x-50-lessonPackButton.GetComponent<RectTransform>().rect.width/2,lessonPackButton.transform.position.y);
         CursorStart.position = handPosition;
         
     }
