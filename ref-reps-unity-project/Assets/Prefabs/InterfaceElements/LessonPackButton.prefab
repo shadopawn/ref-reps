@@ -250,7 +250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500.70007, y: 0.40002882}
+  m_AnchoredPosition: {x: -500.70007, y: 0.4000035}
   m_SizeDelta: {x: 1019.9, y: 174}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &4588693675079416666
@@ -793,7 +793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1181.0759, y: 0}
+  m_AnchoredPosition: {x: -501, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3944382773522684750
@@ -1045,6 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
+  SlideBar: {fileID: 0}
   cursor: {fileID: 0}
   CursorStart: {fileID: 403871085849375904}
 --- !u!114 &5032624919677016134
@@ -1560,6 +1561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
+  SlideBar: {fileID: 0}
   cursor: {fileID: 0}
   CursorStart: {fileID: 6138953583407536090}
 --- !u!114 &5528840898564387668
@@ -3492,6 +3494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
+  SlideBar: {fileID: 0}
   cursor: {fileID: 0}
   CursorStart: {fileID: 9218533175808586604}
 --- !u!114 &7677020567276662047
@@ -3695,6 +3698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
+  SlideBar: {fileID: 0}
   cursor: {fileID: 0}
   CursorStart: {fileID: 3582313969185007728}
 --- !u!114 &6420359535234081905
