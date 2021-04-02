@@ -898,7 +898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -610.2472, y: -0.000015258789}
+  m_AnchoredPosition: {x: -305, y: -0.000015258789}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5756170476873069068
@@ -954,7 +954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266, y: 0.40002}
+  m_AnchoredPosition: {x: -305, y: 0.40002}
   m_SizeDelta: {x: 190.3, y: 190.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2061255696454536475
@@ -972,7 +972,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7436373307411231256}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1022,6 +1022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
+  SlideBar: {fileID: 0}
   cursor: {fileID: 0}
   CursorStart: {fileID: 5165456874646177470}
 --- !u!114 &6921416002960689510
@@ -1156,7 +1157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -266, y: 0.40001678}
+  m_AnchoredPosition: {x: -305.00006, y: 0.40001678}
   m_SizeDelta: {x: 485, y: 174}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &6387342910207508879

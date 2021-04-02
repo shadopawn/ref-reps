@@ -1045,7 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherSelected: 0
-  SlideBar: {fileID: 0}
+  SlideBar: {fileID: 5393759922468828443}
   cursor: {fileID: 0}
   CursorStart: {fileID: 403871085849375904}
 --- !u!114 &5032624919677016134
