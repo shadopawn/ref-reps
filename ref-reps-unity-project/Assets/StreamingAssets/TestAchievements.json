@@ -1,0 +1,10 @@
+{
+  "Achievement Name": {
+    "description": "Short description about the achievement",
+    "completed": false
+  },
+  "Achievement Name 1": {
+    "description": "Another description about the achievement",
+    "completed": false
+  }
+}

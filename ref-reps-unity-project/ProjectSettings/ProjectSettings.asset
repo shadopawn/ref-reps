@@ -646,7 +646,12 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    ErrorHub: 0
+    Hub: 0
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -659,10 +664,10 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: 0e483ac9-3258-4376-acd2-d8daddb3fb5f
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: ref-reps-unity-project
+  organizationId: admin-portal-dev
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
