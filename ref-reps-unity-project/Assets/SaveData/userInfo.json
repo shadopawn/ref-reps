@@ -13,22 +13,11 @@
       "analysis_views": 1
     },
     "Video 2": {
-<<<<<<< HEAD
       "analysis_views": 1
     },
     "Video 1": {
       "incorrect_calls": 1,
       "completed": true
-=======
-      "incorrect_calls": 1,
-      "completed": true
-    },
-    "Video 1": {
-      "analysis_views": 3,
-      "incorrect_calls": 1,
-      "completed": true,
-      "correct_calls": 1
->>>>>>> 1d0a7cdc2fa114ca06320ef7e8670866fb2a1f44
     }
   },
   "Lesson Pack 1": {
