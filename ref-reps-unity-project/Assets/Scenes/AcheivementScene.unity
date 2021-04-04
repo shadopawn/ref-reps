@@ -847,7 +847,7 @@ GameObject:
   - component: {fileID: 760038535}
   - component: {fileID: 760038536}
   m_Layer: 5
-  m_Name: LessonBackground
+  m_Name: AcheivementBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1873,6 +1873,7 @@ GameObject:
   - component: {fileID: 2025721030}
   - component: {fileID: 2025721029}
   - component: {fileID: 2025721032}
+  - component: {fileID: 2025721031}
   m_Layer: 5
   m_Name: AcheivementList
   m_TagString: Untagged
@@ -1896,7 +1897,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 276, y: 341.30002}
+  m_AnchoredPosition: {x: 592.5, y: 341.30002}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2025721029
@@ -1914,10 +1915,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 10
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: -40.15
+  m_Spacing: 50
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -1932,6 +1933,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025721027}
   m_CullTransparentMesh: 0
+--- !u!114 &2025721031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025721027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b66f1dc9eaac49a41820649acf097c34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AcheivementRectPrefab: {fileID: 62668030091874833, guid: b12aeaf028e6ebd4abd020e7e035e006,
+    type: 3}
 --- !u!114 &2025721032
 MonoBehaviour:
   m_ObjectHideFlags: 0

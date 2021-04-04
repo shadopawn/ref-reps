@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TitleScreen.unity
+    path: Assets/Prefabs/Resources/Lessons/TitleScreen.unity
     guid: 694efc9f5e3934b4f813dcf12b1338f8
   - enabled: 1
     path: Assets/Scenes/VideoSelectScreen.unity
