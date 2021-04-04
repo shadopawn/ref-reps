@@ -7,10 +7,7 @@ using UnityEngine.UI;
 public class AcheivementRectList : MonoBehaviour
 {
     public GameObject AcheivementRectPrefab;
-
     private Achievements _achievements = new Achievements();
-    private JsonParser _jsonParser = new JsonParser();
-
     
     // Start is called before the first frame update
     void Start()
@@ -24,24 +21,20 @@ public class AcheivementRectList : MonoBehaviour
 
     private void CreateNewRect(String name, String description, bool isCompleted)
     {
-        String CompletionText;
+        String CompletionText = "Completed";
+
+        if(isCompleted == false){
+            CompletionText = "Not yet completed";
+        }
+
         GameObject AcheivementRect = Instantiate(AcheivementRectPrefab, transform);
 
-        Text RectNameComponent = AcheivementRect.transform.GetChild(0).GetComponentInChildren<Text>();
-        Text RectDescriptionComponent = AcheivementRect.transform.GetChild(1).GetComponentInChildren<Text>();
-        Text RectCompletionComponent = AcheivementRect.transform.GetChild(2).GetComponentInChildren<Text>();
+        Text RectNameComponent = AcheivementRect.transform.GetChild(0).GetComponent<Text>();
+        Text RectDescriptionComponent = AcheivementRect.transform.GetChild(1).GetComponent<Text>();
+        Text RectCompletionComponent = AcheivementRect.transform.GetChild(2).GetComponent<Text>();
 
         RectNameComponent.text = name;
         RectDescriptionComponent.text = description;
-        if(isCompleted)
-        {
-            CompletionText = "Completed";
-        }
-        else
-        {
-            CompletionText = "Not yet completed";
-        }
         RectCompletionComponent.text = CompletionText;
-       
     }
 }
