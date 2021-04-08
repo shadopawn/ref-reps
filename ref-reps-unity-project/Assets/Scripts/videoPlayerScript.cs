@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 using UnityEngine.UI;
 
 public class videoPlayerScript : MonoBehaviour
@@ -63,12 +64,23 @@ public class videoPlayerScript : MonoBehaviour
                 TransitionPanel.SetActive(true);
                 TransitionPanel.transform.parent.gameObject.SetActive(true);
             }
-            if(LessonModuleController.lessonNum >= LessonModuleController.GetLessonPairCount() - 1){
-                TransitionPanel.transform.parent.gameObject.SetActive(true);
-                ModuleCompletePanel.SetActive(true);
+            if(LessonModuleController.lessonNum >= LessonModuleController.GetLessonPairCount() - 1)
+            {
+                LessonPackCompleted();
             }
         }
         
+    }
+
+    public void LessonPackCompleted()
+    {
+        TransitionPanel.transform.parent.gameObject.SetActive(true);
+        ModuleCompletePanel.SetActive(true);
+        
+        AnalyticsEvent.Custom("Lesson Pack Completed", new Dictionary<string, object>
+        {
+            { "Lesson Pack Name", LessonModuleController.GetLessonPackName() }
+        });
     }
 
     public void ReplayClip(){

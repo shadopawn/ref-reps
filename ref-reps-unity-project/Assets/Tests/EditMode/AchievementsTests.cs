@@ -127,35 +127,35 @@ namespace Tests
         [Test]
         public void TestGetAchievements()
         {
-            List<(String name, String description, bool completed)> achievementList =_achievements.GetAchievements();
+            List<(String name, String description, bool completed)> achievementList = _achievements.GetAchievements();
             Assert.NotNull(achievementList);
         }
         
         [Test]
         public void TestGetAchievementsName()
         {
-            List<(String name, String description, bool completed)> achievementList =_achievements.GetAchievements();
+            List<(String name, String description, bool completed)> achievementList = _achievements.GetAchievements();
             Assert.AreEqual(achievementList[0].name, "Achievement Name");
         }
         
         [Test]
         public void TestGetAchievementsDescription()
         {
-            List<(String name, String description, bool completed)> achievementList =_achievements.GetAchievements();
+            List<(String name, String description, bool completed)> achievementList = _achievements.GetAchievements();
             Assert.AreEqual(achievementList[0].description, "Short description about the achievement");
         }
         
         [Test]
         public void TestGetAchievementsCompleted()
         {
-            List<(String name, String description, bool completed)> achievementList =_achievements.GetAchievements();
+            List<(String name, String description, bool completed)> achievementList = _achievements.GetAchievements();
             Assert.AreEqual(achievementList[0].completed, false);
         }
         
         [Test]
         public void TestGetAchievementsCount()
         {
-            List<(String name, String description, bool completed)> achievementList =_achievements.GetAchievements();
+            List<(String name, String description, bool completed)> achievementList = _achievements.GetAchievements();
             Assert.AreEqual(achievementList.Count, 2);
         }
 

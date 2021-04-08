@@ -26,6 +26,11 @@ public class LessonModuleController : MonoBehaviour
         lessonPackName = packName;
     }
 
+    public String GetLessonPackName()
+    {
+        return lessonPackName;
+    }
+
     public void SetLessonPairDataList(List<LessonPairData> lessonPairData)
     {
         lessonPairDataList = lessonPairData;
