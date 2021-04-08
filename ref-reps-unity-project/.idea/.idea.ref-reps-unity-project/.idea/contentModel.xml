@@ -134,6 +134,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AcheivementRectList.cs" t="Include" />
+          <e p="AcheivementTitleButton.cs" t="Include" />
           <e p="baseballPointScript.cs" t="Include" />
           <e p="BodySourceViewTitle.cs" t="Include" />
           <e p="CallImageDownloader.cs" t="Include" />

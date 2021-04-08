@@ -24,14 +24,14 @@ public class AcheivementRectList : MonoBehaviour
         String CompletionText = "Completed";
 
         if(isCompleted == false){
-            CompletionText = "Not yet completed";
+            CompletionText = "Incomplete";
         }
 
         GameObject AcheivementRect = Instantiate(AcheivementRectPrefab, transform);
 
-        Text RectNameComponent = AcheivementRect.transform.GetChild(0).GetComponent<Text>();
-        Text RectDescriptionComponent = AcheivementRect.transform.GetChild(1).GetComponent<Text>();
-        Text RectCompletionComponent = AcheivementRect.transform.GetChild(2).GetComponent<Text>();
+        Text RectNameComponent = AcheivementRect.transform.Find("AchievementName").GetComponent<Text>();
+        Text RectDescriptionComponent = AcheivementRect.transform.Find("AchievementDescription").GetComponent<Text>();
+        Text RectCompletionComponent = AcheivementRect.transform.Find("AchievementCompletion").GetComponent<Text>();
 
         RectNameComponent.text = name;
         RectDescriptionComponent.text = description;
