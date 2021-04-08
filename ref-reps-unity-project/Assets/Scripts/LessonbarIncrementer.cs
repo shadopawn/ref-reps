@@ -6,25 +6,19 @@ using UnityEngine.UI;
 public class LessonbarIncrementer : MonoBehaviour
 {
     private float value = 174.0F;
-
-    GameObject GetButtonRect()
-    {
-        return GameObject.Find("LessonPackButtonList");
-    }
+    public GameObject view;
 
     public void Increment()
     {
-        GameObject rect = GetButtonRect();
-        var pos = rect.transform.position;
+        var pos = view.transform.position;
         pos.y += value;
-        rect.transform.position = pos;
+        view.transform.position = pos;
     }
 
     public void Decrement()
     {
-        GameObject rect = GetButtonRect();
-        var pos = rect.transform.position;
+        var pos = view.transform.position;
         pos.y -= value;
-        rect.transform.position = pos;
+        view.transform.position = pos;
     }
 }

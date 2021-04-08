@@ -1,11 +1,48 @@
 {
-  "Lesson Pack 1": {
-    "Video 1": {
-      "incorrect_calls": 1,
+  "Lesson Pack 4": {
+    "Pack 4 Pair 1": {
       "completed": true
+    },
+    "Pack 4 Pair 2": {
+      "completed": true
+    }
+  },
+  "Lesson Pack 2": {
+    "Pack 2 Pair 1": {
+      "completed": true,
+      "analysis_views": 1
     },
     "Video 2": {
       "analysis_views": 1
+    },
+    "Video 1": {
+      "incorrect_calls": 1,
+      "completed": true
+    }
+  },
+  "Lesson Pack 1": {
+    "Video 1": {
+      "correct_calls": 5,
+      "completed": true,
+      "analysis_views": 1,
+      "incorrect_calls": 4
+    },
+    "Video 2": {
+      "analysis_views": 2,
+      "correct_calls": 2,
+      "completed": true
+    }
+  },
+  "Evan's Test": {
+    "!%$\"GG'^": {
+      "incorrect_calls": 1,
+      "completed": true
+    }
+  },
+  "Lesson Pack 3": {
+    "Video 1": {
+      "correct_calls": 1,
+      "completed": true
     }
   }
 }

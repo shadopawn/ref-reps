@@ -8,6 +8,8 @@ public class TitleButtonScript : MonoBehaviour
     bool mouseDown;
     public bool otherSelected;
 
+    public Transform SlideBar;
+
     public GameObject cursor;
     GameObject[] swipeButtons;
 
@@ -41,8 +43,8 @@ public class TitleButtonScript : MonoBehaviour
     {
         //Set Cursor's Start Position to then end of the SlideButton
         float w = transform.parent.GetComponent<RectTransform>().rect.width;
-        Vector2 pos = new Vector2(Mathf.Clamp(transform.position.x, CursorStart.position.x ,CursorStart.position.x + w/2),CursorStart.position.y);
-        transform.position = pos;
+        //Vector2 pos = new Vector2(Mathf.Clamp(transform.position.x, CursorStart.position.x ,CursorStart.position.x + w/2),CursorStart.position.y);
+        //transform.position = pos;
         //Get the Mouse's Position
         mouseX = Input.mousePosition.x;
 
@@ -97,8 +99,8 @@ public class TitleButtonScript : MonoBehaviour
 
         //Handle Button Execution
         float xMoved = transform.position.x;
-        float barWidth = CursorStart.position.x + w/3;
-        if(xMoved > barWidth){
+        float barWidth = w;
+        if(SlideBar.transform.position.x >= transform.parent.transform.position.x - 100){
             Execute();    
         }
         
