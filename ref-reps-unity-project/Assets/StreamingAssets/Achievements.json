@@ -1,0 +1,10 @@
+{
+    "Achievement Name": {
+        "description": "Short description about the achievement",
+        "completed": false
+    },
+    "Finish One Lesson": {
+        "description": "To get this achievement all you have to do is finish one lesson",
+        "completed": false
+    }
+}

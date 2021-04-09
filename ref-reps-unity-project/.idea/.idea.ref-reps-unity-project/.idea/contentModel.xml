@@ -134,6 +134,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AcheivementRectList.cs" t="Include" />
+          <e p="AcheivementTitleButton.cs" t="Include" />
           <e p="baseballPointScript.cs" t="Include" />
           <e p="BodySourceViewTitle.cs" t="Include" />
           <e p="CallImageDownloader.cs" t="Include" />
@@ -159,6 +161,7 @@
           <e p="HalfSpeedScript.cs" t="Include" />
           <e p="handScript.cs" t="Include" />
           <e p="Helpers" t="Include">
+            <e p="Achievements.cs" t="Include" />
             <e p="JsonParser.cs" t="Include" />
             <e p="SaveData.cs" t="Include" />
           </e>
@@ -320,6 +323,7 @@
         </e>
         <e p="Tests" t="Include">
           <e p="EditMode" t="Include">
+            <e p="AchievementsTests.cs" t="Include" />
             <e p="DatabaseTests.cs" t="Include" />
             <e p="JsonParserTests.cs" t="Include" />
             <e p="LessonPairDataTests.cs" t="Include" />

@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9558b11-7a39-47f1-9d1e-98e71fb94538" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ref-reps-unity-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InterfaceElements/AcheivementRect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InterfaceElements/AcheivementRect.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InterfaceElements/LessonPackButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InterfaceElements/LessonPackButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AcheivementScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AcheivementScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TitleScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TitleScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AcheivementRectList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AcheivementRectList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Achievements.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Achievements.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +46,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/AchievementsTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LessonPackButtonList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CursorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/SaveData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/Achievements.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CallImageDownloader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Tests/EditMode/LessonPairDataTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/VideoButtonList.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,7 +81,6 @@
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/DatabaseTests.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Database/Database.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/LessonPairData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
       <option value="$PROJECT_DIR$/Assets/SaveData/userInfo.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIScripts/SeeAnalysisScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WatchLessonScript.cs" />
@@ -82,8 +89,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LessonSelectScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/SaveData.cs" />
       <option value="$PROJECT_DIR$/Assets/Tests/EditMode/SaveDataTests.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/videoPlayerScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LessonModuleController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/JsonParser.cs" />
+      <option value="$PROJECT_DIR$/Assets/Tests/EditMode/AchievementsTests.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/Achievements.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AcheivementRectList.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1kRQ2eg6kk7Cf5xpSGdiaDy0Mms" />
@@ -169,6 +180,12 @@
       <workItem from="1614206420798" duration="10237000" />
       <workItem from="1614824454931" duration="1059000" />
       <workItem from="1614904432843" duration="1243000" />
+      <workItem from="1615476958660" duration="1411000" />
+      <workItem from="1616284108433" duration="552000" />
+      <workItem from="1616631247029" duration="3039000" />
+      <workItem from="1616709082337" duration="9796000" />
+      <workItem from="1617052618266" duration="15497000" />
+      <workItem from="1617140264804" duration="3761000" />
     </task>
     <servers />
   </component>
