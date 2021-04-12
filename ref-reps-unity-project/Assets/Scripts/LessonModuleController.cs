@@ -15,10 +15,14 @@ public class LessonModuleController : MonoBehaviour
     
     private SaveData _saveData;
 
+    private Achievements _achievements;
+
     private void Awake() {
         DontDestroyOnLoad(this.gameObject);
 
         _saveData = new SaveData();
+
+        _achievements = new Achievements();
     }
 
     public void SetLessonPackName(String packName)
@@ -58,6 +62,8 @@ public class LessonModuleController : MonoBehaviour
             AnalyticsResult result = CustomAnalyticEvent("Complete Lesson Pair");
             Debug.Log("Complete Lesson Pair AnalyticsResult: " + result);
         }
+        
+        _achievements.CompleteAchievement("Finish One Lesson");
         
         _saveData.CompleteLessonPair(lessonPackName, GetCurrentLessonPairName());
     }
